@@ -1,4 +1,3 @@
-import 'package:doctor/pages/auth_page.dart';
 import 'package:doctor/pages/intro_page.dart';
 import 'firebase_options.dart'; 
 import 'package:flutter/material.dart';
