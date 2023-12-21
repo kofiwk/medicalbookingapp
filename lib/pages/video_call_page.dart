@@ -7,7 +7,9 @@ class VideoCallPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset('lib/images/Medical App 3.png'),
+        child: Container(
+          color: Colors.black,
+        ),
       ),
     );
   }
