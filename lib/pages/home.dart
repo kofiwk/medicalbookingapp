@@ -8,6 +8,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  
   int _selectedIndex = 0;
 
   void _navigateBottomBar() {}
@@ -144,11 +145,11 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
 
-              const SizedBox(height: 30),
+              const SizedBox(height: 20),
 
               Container(
                 width: 384,
-                height: 271,
+                height: 286,
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -413,6 +414,90 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ],
                                   ),
+                                ),
+                                const SizedBox(width: 12),
+                                Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                    decoration: ShapeDecoration(
+                                      shape: RoundedRectangleBorder(
+                                      side: BorderSide(
+                                      width: 1, 
+                                      color: Colors.grey,
+                                      ),
+                                      borderRadius: BorderRadius.circular(6)
+                                    )
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        'Reschedule the call',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                          fontFamily: 'Roboto',
+                                          height: 0,
+                                          letterSpacing: -0.30,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          Container(
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                  decoration: ShapeDecoration(
+                                    shape: RoundedRectangleBorder(
+                                      side: BorderSide(
+                                        width: 1,
+                                        color: Colors.grey,
+                                      ),
+                                      borderRadius: BorderRadius.circular(6)
+                                    ),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                      'Send a message',
+                                      textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                          height: 0,
+                                          letterSpacing: -0.30,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 12),
+                                Container(
+                                  width: 177,
+                                  height: 42,
+                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                  decoration: ShapeDecoration(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(6)
+                                    )
+                                  ),
+                                
                                 ),
                               ],
                             ),
