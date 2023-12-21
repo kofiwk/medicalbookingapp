@@ -6,11 +6,8 @@ class VideoCallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Video Call Page'),
-      ),
       body: Center(
-        child: Image.asset('lib/images.Medical App 3.png'),
+        child: Image.asset('lib/images/Medical App 3.png'),
       ),
     );
   }
