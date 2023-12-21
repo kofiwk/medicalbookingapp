@@ -389,9 +389,11 @@ class _HomePageState extends State<HomePage> {
                                   width: 162,
                                   height: 42,
                                   padding: EdgeInsets.all(10),
-                                  decoration: BoxDecoration(
+                                  decoration: ShapeDecoration(
                                     color: Colors.blue,
-                                    shape: Ro
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(6)
+                                    )
                                   ),
                                 )
                               ],
