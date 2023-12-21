@@ -1,3 +1,4 @@
+import 'package:doctor/pages/video_call_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -374,159 +375,206 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    Container(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  width: 162,
-                                  height: 42,
-                                  padding: EdgeInsets.all(10),
-                                  decoration: ShapeDecoration(
-                                    color: Colors.blue,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(6)
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                        context, 
+                        MaterialPageRoute(
+                          builder: (context) => VideoCallPage()
+                        )
+                      ),
+                      child: Container(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 162,
+                                    height: 42,
+                                    padding: EdgeInsets.all(10),
+                                    decoration: ShapeDecoration(
+                                      color: Colors.blue,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(6)
+                                      ),
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                        'Join Appointment',
+                                        textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.w600,
+                                            height: 0,
+                                            letterSpacing: -0.30,
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                      'Joint Appointment',
-                                      textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.w600,
-                                          height: 0,
-                                          letterSpacing: -0.30,
+                                  const SizedBox(width: 12),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                      decoration: ShapeDecoration(
+                                        shape: RoundedRectangleBorder(
+                                        side: BorderSide(
+                                        width: 1, 
+                                        color: Colors.grey,
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                const SizedBox(width: 12),
-                                Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                        borderRadius: BorderRadius.circular(6)
+                                      )
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'Reschedule the call',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500,
+                                            fontFamily: 'Roboto',
+                                            height: 0,
+                                            letterSpacing: -0.30,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            Container(
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
                                     decoration: ShapeDecoration(
                                       shape: RoundedRectangleBorder(
-                                      side: BorderSide(
-                                      width: 1, 
-                                      color: Colors.grey,
-                                      ),
-                                      borderRadius: BorderRadius.circular(6)
-                                    )
-                                  ),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        'Reschedule the call',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w500,
-                                          fontFamily: 'Roboto',
-                                          height: 0,
-                                          letterSpacing: -0.30,
+                                        side: BorderSide(
+                                          width: 1,
+                                          color: Colors.grey,
                                         ),
+                                        borderRadius: BorderRadius.circular(6)
                                       ),
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                          const SizedBox(height: 12),
-                          Container(
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
-                                  decoration: ShapeDecoration(
-                                    shape: RoundedRectangleBorder(
-                                      side: BorderSide(
-                                        width: 1,
-                                        color: Colors.grey,
-                                      ),
-                                      borderRadius: BorderRadius.circular(6)
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                        'Send a message',
+                                        textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.30,
+                                          ),
+                                        )
+                                      ],
                                     ),
                                   ),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                      'Send a message',
-                                      textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w500,
-                                          height: 0,
-                                          letterSpacing: -0.30,
-                                        ),
+                                  const SizedBox(width: 12),
+                                  Container(
+                                    width: 177,
+                                    height: 42,
+                                    padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                    decoration: ShapeDecoration(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(6)
                                       )
-                                    ],
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'Cancel',
+                                          textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                              color: Colors.red,
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.w500,
+                                              height: 0,
+                                              letterSpacing: -0.30,
+                                            ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),
-                                const SizedBox(width: 12),
-                                Container(
-                                  width: 177,
-                                  height: 42,
-                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
-                                  decoration: ShapeDecoration(
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(6)
-                                    )
-                                  ),
-                                
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
+              const SizedBox(height: 10),
+              Container(
+                width: 383,
+                height: 84,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Doctors to meet',
+                      textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600
+                        ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),
       ),
       //Bottom NavBar
       bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _selectedIndex,
-          type: BottomNavigationBarType.fixed,
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: ''),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.explore_outlined), label: ''),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.calendar_today), label: ''),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.chat_bubble_outline), label: ''),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.search_outlined), label: ''),
-          ]),
+        currentIndex: _selectedIndex,
+        type: BottomNavigationBarType.fixed,
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.explore_outlined), label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.calendar_today), label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.chat_bubble_outline), label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.search_outlined), label: ''),
+        ],
+      ),
     );
   }
 }
