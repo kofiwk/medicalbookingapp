@@ -406,7 +406,9 @@ class _HomePageState extends State<HomePage> {
                                         style: TextStyle(
                                           fontSize: 16,
                                           color: Colors.white,
-                                          fontWeight: FontWeight.w500,
+                                          fontWeight: FontWeight.w600,
+                                          height: 0,
+                                          letterSpacing: -0.30,
                                         ),
                                       ),
                                     ],
