@@ -17,6 +17,7 @@ class VideoCallPage extends StatelessWidget {
               ),
           ),
           Container(
+            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
             width: 49,
             height: 225,
             clipBehavior: Clip.antiAlias,
