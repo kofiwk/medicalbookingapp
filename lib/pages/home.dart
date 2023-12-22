@@ -375,160 +375,152 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    GestureDetector(
-                      onTap: () => Navigator.push(
-                        context, 
-                        MaterialPageRoute(
-                          builder: (context) => VideoCallPage()
-                        )
-                      ),
-                      child: Container(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    width: 162,
-                                    height: 42,
-                                    padding: EdgeInsets.all(10),
-                                    decoration: ShapeDecoration(
-                                      color: Colors.blue,
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(6)
-                                      ),
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                        'Join Appointment',
-                                        textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.w600,
-                                            height: 0,
-                                            letterSpacing: -0.30,
-                                          ),
-                                        ),
-                                      ],
+                    Container(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container( 
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  width: 162,
+                                  height: 42,
+                                  padding: EdgeInsets.all(10),
+                                  decoration: ShapeDecoration(
+                                    color: Colors.blue,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(6)
                                     ),
                                   ),
-                                  const SizedBox(width: 12),
-                                  Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
-                                      decoration: ShapeDecoration(
-                                        shape: RoundedRectangleBorder(
-                                        side: BorderSide(
-                                        width: 1, 
-                                        color: Colors.grey,
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                      'Join Appointment',
+                                      textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w600,
+                                          height: 0,
+                                          letterSpacing: -0.30,
                                         ),
-                                        borderRadius: BorderRadius.circular(6)
-                                      )
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          'Reschedule the call',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                            color: Colors.black,
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w500,
-                                            fontFamily: 'Roboto',
-                                            height: 0,
-                                            letterSpacing: -0.30,
-                                          ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 12),
+                                Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                    decoration: ShapeDecoration(
+                                      shape: RoundedRectangleBorder(
+                                      side: BorderSide(
+                                      width: 1, 
+                                      color: Colors.grey,
+                                      ),
+                                      borderRadius: BorderRadius.circular(6)
+                                    )
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        'Reschedule the call',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                          fontFamily: 'Roboto',
+                                          height: 0,
+                                          letterSpacing: -0.30,
                                         ),
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              ],
                             ),
-                            const SizedBox(height: 12),
-                            Container(
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
-                                    decoration: ShapeDecoration(
-                                      shape: RoundedRectangleBorder(
-                                        side: BorderSide(
-                                          width: 1,
-                                          color: Colors.grey,
-                                        ),
-                                        borderRadius: BorderRadius.circular(6)
+                          ),
+                          const SizedBox(height: 12),
+                          Container(
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                  decoration: ShapeDecoration(
+                                    shape: RoundedRectangleBorder(
+                                      side: BorderSide(
+                                        width: 1,
+                                        color: Colors.grey,
                                       ),
+                                      borderRadius: BorderRadius.circular(6)
                                     ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                        'Send a message',
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                      'Send a message',
+                                      textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                          height: 0,
+                                          letterSpacing: -0.30,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 12),
+                                Container(
+                                  width: 177,
+                                  height: 42,
+                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                  decoration: ShapeDecoration(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(6)
+                                    )
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        'Cancel',
                                         textAlign: TextAlign.center,
                                           style: TextStyle(
-                                            color: Colors.black,
+                                            color: Colors.red,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w500,
                                             height: 0,
                                             letterSpacing: -0.30,
                                           ),
-                                        )
-                                      ],
-                                    ),
+                                      ),
+                                    ],
                                   ),
-                                  const SizedBox(width: 12),
-                                  Container(
-                                    width: 177,
-                                    height: 42,
-                                    padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
-                                    decoration: ShapeDecoration(
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(6)
-                                      )
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          'Cancel',
-                                          textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                              color: Colors.red,
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.w500,
-                                              height: 0,
-                                              letterSpacing: -0.30,
-                                            ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
                       ),
                     ),
                   ],
