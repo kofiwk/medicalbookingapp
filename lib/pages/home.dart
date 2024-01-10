@@ -1,4 +1,4 @@
-import 'package:doctor/pages/video_call_page.dart';
+import 'package:doctor/pages/chats_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -9,10 +9,19 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  
   int _selectedIndex = 0;
 
-  void _navigateBottomBar() {}
+  void _navigateBottomBar(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+  final List<Widget> _pages = [
+    //Explore
+    const ChatsPage()
+
+  ];
 
   late String _greeting;
 
@@ -101,53 +110,47 @@ class _HomePageState extends State<HomePage> {
                   )
                 ],
               ),
-
               const SizedBox(height: 40),
-              
               const Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text.rich(
-                    TextSpan(children: [
-                      TextSpan(
-                        text: 'You have',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500,
-                          height: 0,
-                          letterSpacing: -0.30,
-                        )
-                      ),
-                      TextSpan(
-                        text: ' ',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w700,
-                          height: 0,
-                          letterSpacing: -0.30,
-                        )
-                      ),
-                      TextSpan(
-                        text: '2 upcoming sessions',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w700,
-                          height: 0,
-                          letterSpacing: -0.30,
-                        )
-                      )
-                    ],
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: 'You have',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                              height: 0,
+                              letterSpacing: -0.30,
+                            )),
+                        TextSpan(
+                            text: ' ',
+                            style: TextStyle(
+                              color: Colors.blue,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                              letterSpacing: -0.30,
+                            )),
+                        TextSpan(
+                            text: '2 upcoming sessions',
+                            style: TextStyle(
+                              color: Colors.blue,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                              letterSpacing: -0.30,
+                            ))
+                      ],
                     ),
                     textAlign: TextAlign.center,
                   ),
                 ],
               ),
-
               const SizedBox(height: 20),
-
               Container(
                 width: 384,
                 height: 286,
@@ -165,9 +168,7 @@ class _HomePageState extends State<HomePage> {
                           Container(
                             width: 162,
                             height: 159,
-                            decoration: BoxDecoration(
-                              color: Colors.black
-                            ),
+                            decoration: BoxDecoration(color: Colors.black),
                             child: Stack(
                               children: [
                                 Positioned(
@@ -186,7 +187,8 @@ class _HomePageState extends State<HomePage> {
                                     height: 159,
                                     decoration: BoxDecoration(
                                       image: DecorationImage(
-                                        image: AssetImage('lib/images/miro.png'),
+                                        image:
+                                            AssetImage('lib/images/miro.png'),
                                         fit: BoxFit.cover,
                                       ),
                                     ),
@@ -195,7 +197,6 @@ class _HomePageState extends State<HomePage> {
                               ],
                             ),
                           ),
-
                           const SizedBox(width: 16),
                           Container(
                             child: Column(
@@ -207,11 +208,12 @@ class _HomePageState extends State<HomePage> {
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
-                                      'Dr. Albert Johnson',
-                                      textAlign: TextAlign.center,
+                                        'Dr. Albert Johnson',
+                                        textAlign: TextAlign.center,
                                         style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 20,
@@ -221,7 +223,6 @@ class _HomePageState extends State<HomePage> {
                                         ),
                                       ),
                                       const SizedBox(width: 8),
-                                      
                                     ],
                                   ),
                                 ),
@@ -239,8 +240,10 @@ class _HomePageState extends State<HomePage> {
                                           height: 31,
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.start,
-                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
                                             children: [
                                               Container(
                                                 width: 31,
@@ -253,20 +256,25 @@ class _HomePageState extends State<HomePage> {
                                                       child: Container(
                                                         width: 31,
                                                         height: 31,
-                                                        decoration: ShapeDecoration(
+                                                        decoration:
+                                                            ShapeDecoration(
                                                           shape: OvalBorder(),
-                                                          image: DecorationImage(
-                                                            image: AssetImage('lib/images/comment.png'),
+                                                          image:
+                                                              DecorationImage(
+                                                            image: AssetImage(
+                                                                'lib/images/comment.png'),
                                                           ),
                                                         ),
                                                       ),
                                                     ),
-                                                    Positioned(left: 7,
-                                                    top: 6,
+                                                    Positioned(
+                                                      left: 7,
+                                                      top: 6,
                                                       child: Container(
                                                         width: 18,
                                                         height: 18,
-                                                        decoration: BoxDecoration(),
+                                                        decoration:
+                                                            BoxDecoration(),
                                                         child: Stack(
                                                           children: [],
                                                         ),
@@ -276,7 +284,8 @@ class _HomePageState extends State<HomePage> {
                                                 ),
                                               ),
                                               const SizedBox(width: 1),
-                                              Text('General Consultation',
+                                              Text(
+                                                'General Consultation',
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   color: Colors.grey[600],
@@ -298,15 +307,18 @@ class _HomePageState extends State<HomePage> {
                                           height: 19,
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.start,
-                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
                                             children: [
                                               Container(
                                                 width: 18,
                                                 height: 18,
                                                 decoration: BoxDecoration(
                                                   image: DecorationImage(
-                                                    image: AssetImage('lib/images/month.png'),
+                                                    image: AssetImage(
+                                                        'lib/images/month.png'),
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -315,8 +327,8 @@ class _HomePageState extends State<HomePage> {
                                                 ),
                                               ),
                                               SizedBox(width: 6),
-
-                                              Text('Tue, Dec 26',
+                                              Text(
+                                                'Tue, Dec 26',
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   color: Colors.grey[600],
@@ -329,42 +341,44 @@ class _HomePageState extends State<HomePage> {
                                         ),
                                       ),
                                       Positioned(
-                                        left: 7,
-                                        top: 82,
-                                        child: Container(
-                                          width: 155,
-                                          height: 19,
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.start,
-                                            crossAxisAlignment: CrossAxisAlignment.center,
-                                            children: [
-                                              Container(
-                                                width: 18,
-                                                height: 18,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    image: AssetImage('lib/images/clock.png'),
-                                                    fit: BoxFit.cover
+                                          left: 7,
+                                          top: 82,
+                                          child: Container(
+                                            width: 155,
+                                            height: 19,
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.min,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                Container(
+                                                  width: 18,
+                                                  height: 18,
+                                                  decoration: BoxDecoration(
+                                                    image: DecorationImage(
+                                                        image: AssetImage(
+                                                            'lib/images/clock.png'),
+                                                        fit: BoxFit.cover),
+                                                  ),
+                                                  child: Stack(
+                                                    children: [],
                                                   ),
                                                 ),
-                                                child: Stack(
-                                                  children: [],
-                                                ),
-                                              ),
-                                              const SizedBox(width: 8),
-                                              Text('5:30 PM-7:00 PM',
-                                              textAlign: TextAlign.center,
-                                                style: TextStyle(
-                                                  color: Colors.grey[600],
-                                                  fontSize: 16,
-                                                  fontWeight: FontWeight.w500
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                        )
-                                      ),
+                                                const SizedBox(width: 8),
+                                                Text(
+                                                  '5:30 PM-7:00 PM',
+                                                  textAlign: TextAlign.center,
+                                                  style: TextStyle(
+                                                      color: Colors.grey[600],
+                                                      fontSize: 16,
+                                                      fontWeight:
+                                                          FontWeight.w500),
+                                                )
+                                              ],
+                                            ),
+                                          )),
                                     ],
                                   ),
                                 )
@@ -381,7 +395,7 @@ class _HomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container( 
+                          Container(
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -394,17 +408,17 @@ class _HomePageState extends State<HomePage> {
                                   decoration: ShapeDecoration(
                                     color: Colors.blue,
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(6)
-                                    ),
+                                        borderRadius: BorderRadius.circular(6)),
                                   ),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
-                                      'Join Appointment',
-                                      textAlign: TextAlign.center,
+                                        'Join Appointment',
+                                        textAlign: TextAlign.center,
                                         style: TextStyle(
                                           fontSize: 16,
                                           color: Colors.white,
@@ -418,20 +432,21 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 const SizedBox(width: 12),
                                 Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
-                                    decoration: ShapeDecoration(
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 23.50, vertical: 11.50),
+                                  decoration: ShapeDecoration(
                                       shape: RoundedRectangleBorder(
-                                      side: BorderSide(
-                                      width: 1, 
-                                      color: Colors.grey,
-                                      ),
-                                      borderRadius: BorderRadius.circular(6)
-                                    )
-                                  ),
+                                          side: BorderSide(
+                                            width: 1,
+                                            color: Colors.grey,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(6))),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         'Reschedule the call',
@@ -459,24 +474,25 @@ class _HomePageState extends State<HomePage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 23.50, vertical: 11.50),
                                   decoration: ShapeDecoration(
                                     shape: RoundedRectangleBorder(
-                                      side: BorderSide(
-                                        width: 1,
-                                        color: Colors.grey,
-                                      ),
-                                      borderRadius: BorderRadius.circular(6)
-                                    ),
+                                        side: BorderSide(
+                                          width: 1,
+                                          color: Colors.grey,
+                                        ),
+                                        borderRadius: BorderRadius.circular(6)),
                                   ),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
-                                      'Send a message',
-                                      textAlign: TextAlign.center,
+                                        'Send a message',
+                                        textAlign: TextAlign.center,
                                         style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 16,
@@ -492,27 +508,28 @@ class _HomePageState extends State<HomePage> {
                                 Container(
                                   width: 177,
                                   height: 42,
-                                  padding: EdgeInsets.symmetric(horizontal: 23.50, vertical: 11.50),
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 23.50, vertical: 11.50),
                                   decoration: ShapeDecoration(
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(6)
-                                    )
-                                  ),
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(6))),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         'Cancel',
                                         textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                            color: Colors.red,
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w500,
-                                            height: 0,
-                                            letterSpacing: -0.30,
-                                          ),
+                                        style: TextStyle(
+                                          color: Colors.red,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                          height: 0,
+                                          letterSpacing: -0.30,
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -538,11 +555,10 @@ class _HomePageState extends State<HomePage> {
                     Text(
                       'Doctors to meet',
                       textAlign: TextAlign.center,
-                        style: TextStyle(
+                      style: TextStyle(
                           color: Colors.black,
                           fontSize: 20,
-                          fontWeight: FontWeight.w600
-                        ),
+                          fontWeight: FontWeight.w600),
                     )
                   ],
                 ),
@@ -553,20 +569,20 @@ class _HomePageState extends State<HomePage> {
       ),
       //Bottom NavBar
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (index) => _navigateBottomBar(index),
         currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: ''),
           BottomNavigationBarItem(
               icon: Icon(Icons.explore_outlined), label: ''),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.calendar_today), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: ''),
           BottomNavigationBarItem(
               icon: Icon(Icons.chat_bubble_outline), label: ''),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.search_outlined), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.search_outlined), label: ''),
         ],
       ),
+      body: _pages[_selectedIndex],
     );
   }
 }
