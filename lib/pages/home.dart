@@ -582,7 +582,6 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.search_outlined), label: ''),
         ],
       ),
-      body: _pages[_selectedIndex],
     );
   }
 }
