@@ -582,7 +582,8 @@ class _HomePageState extends State<HomePage> {
                               image: AssetImage('lib/images/arrow_back.png'),
                             ),
                           ),
-                          child: const Stack(children: []
+                          child: const Stack(
+                            children: []
                           ),
                         ),
                       ],
@@ -615,7 +616,7 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.black,
                       child: Image.asset('lib/images/stephen.png', fit: BoxFit.cover,),
                     ),
-                    
+
                   ],
                 )
               ),
