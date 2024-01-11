@@ -36,7 +36,7 @@ class _DashboardState extends State<Dashboard> {
   void dispose() {
     super.dispose();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -599,7 +599,10 @@ class _DashboardState extends State<Dashboard> {
                       width: 170,
                       height: 182,
                       color: Colors.black,
-                      child: Image.asset('lib/images/stephen.png', fit: BoxFit.cover,),
+                      child: Image.asset(
+                        'lib/images/stephen.png', 
+                      fit: BoxFit.cover,
+                      ),
                     ),
                   ],
                 )
