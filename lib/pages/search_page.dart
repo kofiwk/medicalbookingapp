@@ -5,7 +5,7 @@ class SearchPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text(
         'Search',
         style: TextStyle(fontSize: 50),
