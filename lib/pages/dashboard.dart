@@ -52,7 +52,7 @@ class _DashboardState extends State<Dashboard> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset('lib/images/Ellipse 3.png',
+                      Image.asset('assets/images/Ellipse 3.png',
                           width: 61, height: 61),
                       const SizedBox(width: 16),
                       Column(
@@ -173,7 +173,7 @@ class _DashboardState extends State<Dashboard> {
                                   decoration: const BoxDecoration(
                                     image: DecorationImage(
                                       image:
-                                          AssetImage('lib/images/miro.png'),
+                                          AssetImage('assets/images/miro.png'),
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -244,7 +244,7 @@ class _DashboardState extends State<Dashboard> {
                                                       image:
                                                           DecorationImage(
                                                         image: AssetImage(
-                                                            'lib/images/comment.png'),
+                                                            'assets/images/comment.png'),
                                                       ),
                                                     ),
                                                   ),
@@ -300,7 +300,7 @@ class _DashboardState extends State<Dashboard> {
                                             decoration: const BoxDecoration(
                                               image: DecorationImage(
                                                 image: AssetImage(
-                                                    'lib/images/month.png'),
+                                                    'assets/images/month.png'),
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -341,7 +341,7 @@ class _DashboardState extends State<Dashboard> {
                                               decoration: const BoxDecoration(
                                                 image: DecorationImage(
                                                     image: AssetImage(
-                                                        'lib/images/clock.png'),
+                                                        'assets/images/clock.png'),
                                                     fit: BoxFit.cover),
                                               ),
                                               child: const Stack(
@@ -550,7 +550,7 @@ class _DashboardState extends State<Dashboard> {
                           clipBehavior: Clip.antiAlias,
                           decoration: const BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('lib/images/arrow_forward.png'),
+                              image: AssetImage('assets/images/arrow_forward.png'),
                             )
                           ),
                           child: const Stack(
@@ -564,7 +564,7 @@ class _DashboardState extends State<Dashboard> {
                           clipBehavior: Clip.antiAlias,
                           decoration: const BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('lib/images/arrow_back.png'),
+                              image: AssetImage('assets/images/arrow_back.png'),
                             ),
                           ),
                           child: const Stack(
@@ -590,7 +590,7 @@ class _DashboardState extends State<Dashboard> {
                       height: 182,
                       color: Colors.black,
                       child: Image.asset(
-                        'lib/images/sandra.png', 
+                        'assets/images/sandra.png', 
                       fit: BoxFit.cover,
                       ),
                     ),
@@ -600,7 +600,7 @@ class _DashboardState extends State<Dashboard> {
                       height: 182,
                       color: Colors.black,
                       child: Image.asset(
-                        'lib/images/stephen.png', 
+                        'assets/images/stephen.png', 
                       fit: BoxFit.cover,
                       ),
                     ),
