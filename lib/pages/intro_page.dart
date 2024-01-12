@@ -69,8 +69,7 @@ class IntroPage extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 20),
-
+          const SizedBox(height: 20),
           // title
           const Text(
             'Skip the Waiting Room. Consult With a Doctor Now',
