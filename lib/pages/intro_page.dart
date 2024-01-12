@@ -14,7 +14,7 @@ class IntroPage extends StatelessWidget {
         children: [
           // image
           Image.asset(
-            'lib/images/nurse.jpg',
+            'assets/images/nurse.jpg',
             height: 490,
             width: screenSize.width,
             fit: BoxFit.cover,
