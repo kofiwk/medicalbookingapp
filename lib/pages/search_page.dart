@@ -52,8 +52,9 @@ class _SearchPageState extends State<SearchPage> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset('assets/images/Ellipse 3.png',
-                          width: 61, height: 61),
+                      Image.asset(
+                        'assets/images/Ellipse 3.png',
+                        width: 61, height: 61),
                       const SizedBox(width: 16),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -111,6 +112,21 @@ class _SearchPageState extends State<SearchPage> {
                     ],
                   ),
                 ],
+              ),
+              const SizedBox(height: 25),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                width: 384,
+                height: 52,
+                decoration: ShapeDecoration(
+                  shape: RoundedRectangleBorder(
+                    side: const BorderSide(
+                      width: 1, 
+                      color: Colors.grey,
+                    ),
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                ),
               ),
             ],
           ),
