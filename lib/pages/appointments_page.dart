@@ -5,7 +5,7 @@ class AppointmentsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text(
         'Appointments',
         style: TextStyle(fontSize: 50),
