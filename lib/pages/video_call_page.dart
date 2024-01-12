@@ -17,12 +17,12 @@ class VideoCallPage extends StatelessWidget {
               ),
           ),
           Container(
-            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
             width: 49,
             height: 225,
             clipBehavior: Clip.antiAlias,
               decoration: ShapeDecoration(
-              color: Color(0xFF0F1920),
+              color:  const Color(0xFF0F1920),
               shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(40),
               )
