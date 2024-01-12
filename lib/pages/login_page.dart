@@ -102,7 +102,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 8.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Text(
                         'Or continue with',
                         style: TextStyle(color: Colors.grey[700]),
@@ -121,13 +121,12 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 50),
 
               //Google + Apple Sign In
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   // Google Button
                   SquareTile(imagePath: 'lib/images/google.png'),
-                  
-                  const SizedBox(width: 40),
+                  SizedBox(width: 40),
                   // Apple Button
                   SquareTile(imagePath: 'lib/images/apple.png'),
                 ],
