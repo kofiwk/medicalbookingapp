@@ -25,6 +25,17 @@ class _SearchPageState extends State<SearchPage> {
       _greeting = greeting;
     });
   }
+
+   @override
+  void initState() {
+    super.initState();
+    setGreeting();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
   
   @override
   Widget build(BuildContext context) {
@@ -69,8 +80,38 @@ class _SearchPageState extends State<SearchPage> {
                       ),
                     ],
                   ),
+                  Stack(
+                    children: [
+                      Container(
+                        height: 28,
+                        width: 28,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage(
+                              'assets/images/notification.png',
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        right: 0,
+                        child: Container(
+                        width: 14,
+                        height: 14,
+                        decoration: const ShapeDecoration(
+                          color: Colors.blue,
+                          shape: OvalBorder(
+                            side: BorderSide(
+                              width: 1.50, color: Colors.blue
+                              )
+                            )
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),
