@@ -114,20 +114,32 @@ class _SearchPageState extends State<SearchPage> {
                 ],
               ),
               const SizedBox(height: 25),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                width: 384,
-                height: 52,
-                decoration: ShapeDecoration(
-                  shape: RoundedRectangleBorder(
-                    side: const BorderSide(
-                      width: 1, 
+              Stack(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                    width: 384,
+                    height: 52,
+                    decoration: ShapeDecoration(
+                      shape: RoundedRectangleBorder(
+                        side: const BorderSide(
+                          width: 2, 
+                          color: Colors.grey,
+                        ),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    right: 10,
+                    child: Container(
+                      height: 20, 
+                      width: 20, 
                       color: Colors.grey,
                     ),
-                    borderRadius: BorderRadius.circular(6),
                   ),
-                ),
-              ),
+                ],
+              )
             ],
           ),
         ),
