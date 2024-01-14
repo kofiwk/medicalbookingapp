@@ -114,32 +114,91 @@ class _SearchPageState extends State<SearchPage> {
                 ],
               ),
               const SizedBox(height: 25),
-              Stack(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                    width: 384,
-                    height: 52,
-                    decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        side: const BorderSide(
-                          width: 2, 
-                          color: Colors.grey,
-                        ),
-                        borderRadius: BorderRadius.circular(6),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    right: 10,
-                    child: Container(
-                      height: 20, 
-                      width: 20, 
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                width: 384,
+                height: 52,
+                decoration: ShapeDecoration(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    side: const BorderSide(
+                      width: 1, 
                       color: Colors.grey,
                     ),
+                    borderRadius: BorderRadius.circular(6),
                   ),
-                ],
-              )
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 22,
+                          height: 22,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: const BoxDecoration(),
+                          child: const Stack(
+                            children: [
+                              Positioned(
+                                top: 0,
+                                left: 0,
+                                child: SizedBox(
+                                  width: 22, 
+                                  height: 22,
+                                  child: Stack(
+                                    children: [
+                                      Image(
+                                        image: AssetImage(
+                                          'assets/images/search.png'
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 12),
+                        const Text(
+                          'Search by name or role',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 18,
+                            fontFamily: 'Urbanist',
+                            fontWeight: FontWeight.w500,
+                            letterSpacing: -0.30,
+                            height: 0,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(width: 10),
+                    Container(
+                      width: 24,
+                      height: 24,
+                      clipBehavior: Clip.antiAlias,
+                      decoration: const BoxDecoration(),
+                      child: const Stack(
+                        children: [
+                          Image(
+                            image: AssetImage(
+                              'assets/images/filter.png',
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
