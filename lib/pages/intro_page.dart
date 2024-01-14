@@ -106,7 +106,7 @@ class IntroPage extends StatelessWidget {
             ),
             child: Container(
               width: 384,
-              height: 64,
+              height: 60,
               decoration: ShapeDecoration(
                 color: Colors.blue,
                 shape: RoundedRectangleBorder(
