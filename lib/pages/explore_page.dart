@@ -5,13 +5,14 @@ class ExplorePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(25.0),
+          padding: const EdgeInsets.all(25.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
+              const Text(
                 'Explore',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -21,7 +22,7 @@ class ExplorePage extends StatelessWidget {
                   height: 0,
                   letterSpacing: -0.30,
                 ),
-                ),
+              ),
             ],
           ),
         )
