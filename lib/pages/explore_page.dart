@@ -33,14 +33,264 @@ class ExplorePage extends StatelessWidget {
                     child: const Stack(
                       children: [
                         Image(
-                          image: AssetImage(
-                            'assets/images/menu.png'
-                          ),
+                          image: AssetImage('assets/images/menu.png'),
                         ),
                       ],
                     ),
                   )
                 ],
+              ),
+              const SizedBox(height: 24),
+              SizedBox(
+                  width: 455,
+                  height: 38,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                        'Medical Practitioners',
+                        textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontFamily: 'Urbanist',
+                            fontWeight: FontWeight.w600,
+                            height: 0,
+                            letterSpacing: -0.30,
+                          ),
+                        ),
+                        const SizedBox(height: 5),
+                        Container(
+                          width: 182,
+                          height: 3,
+                          decoration: ShapeDecoration(
+                            color: Colors.blue,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12)
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const Text(
+                    'Group Sessions',
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 20,
+                        fontFamily: 'Urbanist',
+                        fontWeight: FontWeight.w500,
+                        height: 0,
+                        letterSpacing: -0.30,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 20),
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                width: 384,
+                height: 52,
+                decoration: ShapeDecoration(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    side: const BorderSide(
+                      width: 1,
+                      color: Colors.grey,
+                    ),
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            width: 22,
+                            height: 22,
+                            clipBehavior: Clip.antiAlias,
+                            decoration: const BoxDecoration(),
+                            child: const Stack(
+                              children: [
+                                Positioned(
+                                  top: 0,
+                                  left: 0,
+                                  child: SizedBox(
+                                    width: 22,
+                                    height: 22,
+                                    child: Stack(
+                                      children: [
+                                        Image(
+                                          image: AssetImage(
+                                              'assets/images/search.png'),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          const Text(
+                            'Search by name or role',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 18,
+                              fontFamily: 'Urbanist',
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: -0.30,
+                              height: 0,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(width: 10),
+                      Container(
+                        width: 24,
+                        height: 24,
+                        clipBehavior: Clip.antiAlias,
+                        decoration: const BoxDecoration(),
+                        child: const Stack(
+                          children: [
+                            Image(
+                              image: AssetImage(
+                                'assets/images/filter.png',
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 25),
+                SizedBox(
+                  width: 455,
+                  height: 27,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const Text(
+                        'All',
+                        textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                            fontFamily: 'Urbanist',
+                            fontWeight: FontWeight.w600,
+                            height: 0,
+                            letterSpacing: -0.30,
+                          ),
+                        ),
+                        const SizedBox(height: 5),
+                        Container(
+                          width: 22,
+                          height: 3,
+                          decoration: ShapeDecoration(
+                            color: Colors.blue,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12)
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(width: 23),
+                    const Text(
+                    'Recommended',
+                    textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 16,
+                        fontFamily: 'Urbanist',
+                        fontWeight: FontWeight.w400,
+                        height: 0,
+                        letterSpacing: -0.30,
+                      ),
+                    ),
+                    const SizedBox(width: 23),
+                    const Text(
+                    'Medical Doctors',
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 16,
+                        fontFamily: 'Urbanist',
+                        fontWeight: FontWeight.w400,
+                        height: 0,
+                        letterSpacing: -0.30,
+                      ),
+                    ),
+                    const SizedBox(width: 23),
+                    const Text(
+                    'Nurses',
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 16,
+                        fontFamily: 'Urbanist',
+                        fontWeight: FontWeight.w400,
+                        height: 0,
+                        letterSpacing: -0.30,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 30),
+              SizedBox(
+                width: 384,
+                height: 182,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 170,
+                      height: 182,
+                      color: Colors.black,
+                      child: const Image(
+                        fit: BoxFit.cover,
+                        image: AssetImage(
+                          'assets/images/josephine.png',
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 20),
+                    Container(
+                      width: 170,
+                      height: 182,
+                      color: Colors.black,
+                      child: const Image(
+                        fit: BoxFit.cover,
+                        image: AssetImage(
+                          'assets/images/kelvin.png',
+                        )),
+                    )
+                  ],
+                ),
               ),
             ],
           ),
