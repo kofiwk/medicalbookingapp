@@ -80,20 +80,36 @@ class _DashboardState extends State<Dashboard> {
                       ),
                     ],
                   ),
-
-                  // Notification
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Colors.blue[500],
-                        borderRadius: BorderRadius.circular(12)),
-                    child: const Padding(
-                      padding: EdgeInsets.all(10.0),
-                      child: Icon(
-                        Icons.notifications,
-                        color: Colors.white,
+                  Stack(
+                    children: [
+                      Container(
+                        height: 28,
+                        width: 28,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage(
+                              'assets/images/notification.png',
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
-                  )
+                      Positioned(
+                        right: 0,
+                        child: Container(
+                        width: 14,
+                        height: 14,
+                        decoration: const ShapeDecoration(
+                          color: Colors.blue,
+                          shape: OvalBorder(
+                            side: BorderSide(
+                              width: 1.50, color: Colors.blue
+                              )
+                            )
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
               const SizedBox(height: 40),
