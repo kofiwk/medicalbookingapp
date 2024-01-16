@@ -42,7 +42,7 @@ class _DashboardState extends State<Dashboard> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(25.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
               Row(
@@ -113,43 +113,81 @@ class _DashboardState extends State<Dashboard> {
                 ],
               ),
               const SizedBox(height: 40),
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text.rich(
+                  const Text.rich(
                     TextSpan(
                       children: [
                         TextSpan(
-                            text: 'You have',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                              height: 0,
-                              letterSpacing: -0.30,
-                            )),
+                          text: 'You have',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500,
+                            height: 0,
+                            letterSpacing: -0.30,
+                          ),
+                        ),
                         TextSpan(
-                            text: ' ',
-                            style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w700,
-                              height: 0,
-                              letterSpacing: -0.30,
-                            )),
+                          text: ' ',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: -0.30,
+                          ),
+                        ),
                         TextSpan(
-                            text: '2 upcoming sessions',
-                            style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w700,
-                              height: 0,
-                              letterSpacing: -0.30,
-                            ))
+                          text: '2 upcoming sessions',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: -0.30,
+                          )
+                        )
                       ],
                     ),
                     textAlign: TextAlign.center,
                   ),
+                  const SizedBox(width: 60),
+                  Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 20,
+                          height: 20,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/arrow_forward.png'),
+                            )
+                          ),
+                          child: const Stack(
+                            children: [],
+                          ),
+                        ),
+                        const SizedBox(width:20),
+                        Container(
+                          width: 20,
+                          height: 20,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/arrow_back.png'),
+                            ),
+                          ),
+                          child: const Stack(
+                            children: []
+                          ),
+                        ),
+                      ],
+                    ),
                 ],
               ),
               const SizedBox(height: 20),
@@ -324,7 +362,7 @@ class _DashboardState extends State<Dashboard> {
                                               children: [],
                                             ),
                                           ),
-                                          const SizedBox(width: 6),
+                                          const SizedBox(width: 5),
                                           Text(
                                             'Tue, Dec 26',
                                             textAlign: TextAlign.center,
@@ -573,7 +611,7 @@ class _DashboardState extends State<Dashboard> {
                             children: [],
                           ),
                         ),
-                        const SizedBox(width:2),
+                        const SizedBox(width:20),
                         Container(
                           width: 20,
                           height: 20,
@@ -602,7 +640,7 @@ class _DashboardState extends State<Dashboard> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      width: 170,
+                      width: 185,
                       height: 182,
                       color: Colors.black,
                       child: Image.asset(
@@ -610,9 +648,9 @@ class _DashboardState extends State<Dashboard> {
                       fit: BoxFit.cover,
                       ),
                     ),
-                    const SizedBox(width: 18),
+                    const SizedBox(width: 14),
                     Container(
-                      width: 170,
+                      width: 185,
                       height: 182,
                       color: Colors.black,
                       child: Image.asset(
