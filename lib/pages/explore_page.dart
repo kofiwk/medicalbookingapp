@@ -8,7 +8,7 @@ class ExplorePage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(25.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
               Row(
@@ -42,21 +42,21 @@ class ExplorePage extends StatelessWidget {
               ),
               const SizedBox(height: 24),
               SizedBox(
-                  width: 455,
-                  height: 38,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                width: 455,
+                height: 38,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
                     Column(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                        'Medical Practitioners',
-                        textAlign: TextAlign.center,
+                          'Medical Practitioners',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -73,14 +73,13 @@ class ExplorePage extends StatelessWidget {
                           decoration: ShapeDecoration(
                             color: Colors.blue,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12)
-                            ),
+                                borderRadius: BorderRadius.circular(12)),
                           ),
                         ),
                       ],
                     ),
                     const Text(
-                    'Group Sessions',
+                      'Group Sessions',
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 20,
@@ -113,89 +112,89 @@ class ExplorePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Row(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            width: 22,
-                            height: 22,
-                            clipBehavior: Clip.antiAlias,
-                            decoration: const BoxDecoration(),
-                            child: const Stack(
-                              children: [
-                                Positioned(
-                                  top: 0,
-                                  left: 0,
-                                  child: SizedBox(
-                                    width: 22,
-                                    height: 22,
-                                    child: Stack(
-                                      children: [
-                                        Image(
-                                          image: AssetImage(
-                                              'assets/images/search.png'),
-                                        ),
-                                      ],
-                                    ),
+                  children: [
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 22,
+                          height: 22,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: const BoxDecoration(),
+                          child: const Stack(
+                            children: [
+                              Positioned(
+                                top: 0,
+                                left: 0,
+                                child: SizedBox(
+                                  width: 22,
+                                  height: 22,
+                                  child: Stack(
+                                    children: [
+                                      Image(
+                                        image: AssetImage(
+                                            'assets/images/search.png'),
+                                      ),
+                                    ],
                                   ),
-                                )
-                              ],
-                            ),
+                                ),
+                              )
+                            ],
                           ),
-                          const SizedBox(width: 12),
-                          const Text(
-                            'Search by name or role',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 18,
-                              fontFamily: 'Urbanist',
-                              fontWeight: FontWeight.w500,
-                              letterSpacing: -0.30,
-                              height: 0,
+                        ),
+                        const SizedBox(width: 12),
+                        const Text(
+                          'Search by name or role',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 18,
+                            fontFamily: 'Urbanist',
+                            fontWeight: FontWeight.w500,
+                            letterSpacing: -0.30,
+                            height: 0,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(width: 10),
+                    Container(
+                      width: 24,
+                      height: 24,
+                      clipBehavior: Clip.antiAlias,
+                      decoration: const BoxDecoration(),
+                      child: const Stack(
+                        children: [
+                          Image(
+                            image: AssetImage(
+                              'assets/images/filter.png',
                             ),
                           ),
                         ],
                       ),
-                      const SizedBox(width: 10),
-                      Container(
-                        width: 24,
-                        height: 24,
-                        clipBehavior: Clip.antiAlias,
-                        decoration: const BoxDecoration(),
-                        child: const Stack(
-                          children: [
-                            Image(
-                              image: AssetImage(
-                                'assets/images/filter.png',
-                              ),
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
+                    )
+                  ],
                 ),
-                const SizedBox(height: 25),
-                SizedBox(
-                  width: 455,
-                  height: 27,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+              ),
+              const SizedBox(height: 25),
+              SizedBox(
+                width: 455,
+                height: 27,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
                     Column(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const Text(
-                        'All',
-                        textAlign: TextAlign.center,
+                          'All',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 16,
@@ -212,16 +211,15 @@ class ExplorePage extends StatelessWidget {
                           decoration: ShapeDecoration(
                             color: Colors.blue,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12)
-                            ),
+                                borderRadius: BorderRadius.circular(12)),
                           ),
                         ),
                       ],
                     ),
-                    const SizedBox(width: 23),
+                    const SizedBox(width: 13),
                     const Text(
-                    'Recommended',
-                    textAlign: TextAlign.center,
+                      'Recommended',
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 16,
@@ -231,9 +229,9 @@ class ExplorePage extends StatelessWidget {
                         letterSpacing: -0.30,
                       ),
                     ),
-                    const SizedBox(width: 23),
+                    const SizedBox(width: 13),
                     const Text(
-                    'Medical Doctors',
+                      'Medical Doctors',
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 16,
@@ -243,9 +241,21 @@ class ExplorePage extends StatelessWidget {
                         letterSpacing: -0.30,
                       ),
                     ),
-                    const SizedBox(width: 23),
+                    const SizedBox(width: 13),
                     const Text(
-                    'Nurses',
+                      'Nurses',
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 16,
+                        fontFamily: 'Urbanist',
+                        fontWeight: FontWeight.w400,
+                        height: 0,
+                        letterSpacing: -0.30,
+                      ),
+                    ),
+                    const SizedBox(width: 13),
+                    const Text(
+                      'Cardio',
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 16,
@@ -261,34 +271,142 @@ class ExplorePage extends StatelessWidget {
               const SizedBox(height: 30),
               SizedBox(
                 width: 384,
-                height: 182,
+                height: 220,
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Container(
-                      width: 170,
-                      height: 182,
-                      color: Colors.black,
-                      child: const Image(
-                        fit: BoxFit.cover,
-                        image: AssetImage(
-                          'assets/images/josephine.png',
+                    Column(
+                      children: [
+                        Container(
+                          width: 185,
+                          height: 182,
+                          color: Colors.black,
+                          child: const Image(
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                              'assets/images/josephine.png',
+                            ),
+                          ),
                         ),
-                      ),
+                        const SizedBox(height: 5),
+                        Container(
+                          width: 185,
+                          height: 25,
+                          color: Colors.grey,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                width: 185,
+                                color: Colors.grey[300],
+                                child: const Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'Dr. Josephine Jane',
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 17,
+                                        fontWeight: FontWeight.w600,
+                                        height: 0,
+                                        letterSpacing: -0.30,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
-                    const SizedBox(width: 20),
-                    Container(
-                      width: 170,
-                      height: 182,
-                      color: Colors.black,
-                      child: const Image(
-                        fit: BoxFit.cover,
-                        image: AssetImage(
-                          'assets/images/kelvin.png',
-                        )),
-                    )
+                    const SizedBox(width: 14),
+                    Column(
+                      children: [
+                        Container(
+                          width: 185,
+                          height: 182,
+                          color: Colors.black,
+                          child: const Image(
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                              'assets/images/kelvin.png',
+                            )
+                          ),
+                        ),
+                        const SizedBox(height: 5),
+                        Container(
+                          width: 185,
+                          height: 25,
+                          color: Colors.grey,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                width: 185,
+                                color: Colors.grey[300],
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    const Text(
+                                      'Dr. Kelvin Anthony ',
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w600,
+                                        height: 0,
+                                        letterSpacing: -0.30,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 5),
+                                    Container(
+                                      width: 18,
+                                      height: 14,
+                                      decoration: const BoxDecoration(),
+                                      child: const Stack(
+                                        clipBehavior: Clip.antiAlias,
+                                        children: [
+                                          Positioned(
+                                            left: 0,
+                                            top: 0,
+                                            child: SizedBox(
+                                              width: 18,
+                                              height: 14,
+                                              child: Stack(
+                                                children: [
+                                                  Image(
+                                                    image: AssetImage(
+                                                      'assets/images/nigeria.png'
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ],
                 ),
               ),
