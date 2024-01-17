@@ -14,6 +14,7 @@ class ExplorePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  // Title
                   const Text(
                     'Explore',
                     textAlign: TextAlign.center,
@@ -25,21 +26,23 @@ class ExplorePage extends StatelessWidget {
                       letterSpacing: -0.30,
                     ),
                   ),
+                  // Icon
                   Container(
                     width: 24,
                     height: 24,
                     clipBehavior: Clip.antiAlias,
-                    decoration: const BoxDecoration(),
-                    child: const Stack(
-                      children: [
-                        Image(
-                          image: AssetImage('assets/images/menu.png'),
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(
+                          'assets/images/menu.png'
                         ),
-                      ],
+                      ),
                     ),
                   )
                 ],
               ),
+
+              // Medical Practitioners & Group Sessions
               const SizedBox(height: 24),
               SizedBox(
                 width: 455,
@@ -152,15 +155,12 @@ class ExplorePage extends StatelessWidget {
                       width: 24,
                       height: 24,
                       clipBehavior: Clip.antiAlias,
-                      decoration: const BoxDecoration(),
-                      child: const Stack(
-                        children: [
-                          Image(
-                            image: AssetImage(
-                              'assets/images/filter.png',
-                            ),
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(image: 
+                          AssetImage(
+                            'assets/images/filter.png'
                           ),
-                        ],
+                        ),
                       ),
                     )
                   ],
@@ -263,7 +263,7 @@ class ExplorePage extends StatelessWidget {
               const SizedBox(height: 40),
               SizedBox(
                 width: 384,
-                height: 320,
+                height: 310,
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -285,7 +285,7 @@ class ExplorePage extends StatelessWidget {
                         const SizedBox(height: 5),
                         SizedBox(
                           width: 185,
-                          height: 85,
+                          height: 120,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -369,26 +369,73 @@ class ExplorePage extends StatelessWidget {
                                 ],
                               ),
                               const SizedBox(height: 11),
-                              Container(
-                                height: 20,
-                                width: 20,
-                                color: Colors.black,
-                              )
+                              Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        height: 20,
+                                        width: 20,
+                                        decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                            image: AssetImage(
+                                              'assets/images/star.png'
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      const Text.rich(
+                                        TextSpan(
+                                          children: [
+                                            TextSpan(
+                                              text: '4.86 ',
+                                              style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.w500,
+                                                height: 0,
+                                                letterSpacing: -0.30,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: '(20 reviews)',
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.w600,
+                                                height: 0,
+                                                letterSpacing: -0.30,
+                                              )
+                                            )
+                                          ]
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         ),
                       ],
                     ),
-                    
+
                     //Dr Kelvin Anthony
                     const SizedBox(width: 14),
                     Column(
                       children: [
-                        Container(
+                        const SizedBox(
                           width: 185,
                           height: 182,
-                          color: Colors.black,
-                          child: const Image(
+                          child: Image(
                             fit: BoxFit.cover,
                             image: AssetImage(
                               'assets/images/kelvin.png',
@@ -478,18 +525,60 @@ class ExplorePage extends StatelessWidget {
                                 ],
                               ),
                               const SizedBox(height: 11),
-                              Container(
-                                height: 20,
-                                width: 20,
-                                clipBehavior: Clip.antiAlias,
-                                decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                      'assets/images/star.png'
-                                    ),
+                              Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        height: 20,
+                                        width: 20,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                            image: AssetImage(
+                                              'assets/images/star.png'
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      const Text.rich(
+                                        TextSpan(
+                                          children: [
+                                            TextSpan(
+                                              text: '4.56  ',
+                                              style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.w500,
+                                                height: 0,
+                                                letterSpacing: -0.30,
+                                              ),
+                                            ),
+                                            TextSpan(
+                                              text: '(35 reviews)',
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.w600,
+                                                height: 0,
+                                                letterSpacing: -0.30,
+                                              )
+                                            )
+                                          ]
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      )
+                                    ],
                                   ),
-                                ),                         
-                              )
+                                ],
+                              ),
                             ],
                           ),
                         )
@@ -498,6 +587,38 @@ class ExplorePage extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 0),
+              SizedBox(
+                width: 384,
+                height: 182,
+                child: Row(
+                  children: [
+                    Container(
+                      width: 185,
+                      height: 182,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage(
+                            'assets/images/kelvin.png'
+                          )
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 14),
+                    Container(
+                      width: 185,
+                      height: 182,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage(
+                            'assets/images/tima.png'
+                          ),
+                        )
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),
