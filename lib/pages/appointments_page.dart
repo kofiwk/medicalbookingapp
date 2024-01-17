@@ -8,7 +8,7 @@ class AppointmentsPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(25.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
               Row(
