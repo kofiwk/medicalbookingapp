@@ -92,6 +92,8 @@ class ExplorePage extends StatelessWidget {
                   ],
                 ),
               ),
+
+              // Search Box
               const SizedBox(height: 20),
               Container(
                 padding:
@@ -122,26 +124,12 @@ class ExplorePage extends StatelessWidget {
                           width: 22,
                           height: 22,
                           clipBehavior: Clip.antiAlias,
-                          decoration: const BoxDecoration(),
-                          child: const Stack(
-                            children: [
-                              Positioned(
-                                top: 0,
-                                left: 0,
-                                child: SizedBox(
-                                  width: 22,
-                                  height: 22,
-                                  child: Stack(
-                                    children: [
-                                      Image(
-                                        image: AssetImage(
-                                            'assets/images/search.png'),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              )
-                            ],
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage(
+                                'assets/images/search.png'
+                              ),
+                            )
                           ),
                         ),
                         const SizedBox(width: 12),
@@ -178,6 +166,8 @@ class ExplorePage extends StatelessWidget {
                   ],
                 ),
               ),
+
+              // Options
               const SizedBox(height: 25),
               SizedBox(
                 width: 455,
@@ -268,10 +258,12 @@ class ExplorePage extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 30),
+
+              // Dr. Josephine
+              const SizedBox(height: 40),
               SizedBox(
                 width: 384,
-                height: 220,
+                height: 320,
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -283,7 +275,7 @@ class ExplorePage extends StatelessWidget {
                           width: 185,
                           height: 182,
                           color: Colors.black,
-                          child: const Image(
+                          child: const  Image(
                             fit: BoxFit.cover,
                             image: AssetImage(
                               'assets/images/josephine.png',
@@ -291,25 +283,23 @@ class ExplorePage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 5),
-                        Container(
+                        SizedBox(
                           width: 185,
-                          height: 25,
-                          color: Colors.grey,
+                          height: 85,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
+                              SizedBox(
                                 width: 185,
-                                color: Colors.grey[300],
-                                child: const Row(
+                                child: Row(
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Text(
+                                    const Text(
                                       'Dr. Josephine Jane',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
@@ -319,15 +309,78 @@ class ExplorePage extends StatelessWidget {
                                         height: 0,
                                         letterSpacing: -0.30,
                                       ),
+                                    ),
+                                    const SizedBox(width: 2),
+                                    Container(
+                                      width: 18,
+                                      height: 14,
+                                      decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage(
+                                            'assets/images/nigeria.png'
+                                          ),
+                                        )
+                                      ),
                                     )
                                   ],
                                 ),
+                              ),
+                              const SizedBox(height: 14),
+                              Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        width: 20,
+                                        height: 20,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: const BoxDecoration(),
+                                        child: const Stack(
+                                          children: [
+                                            Image(
+                                              image: AssetImage(
+                                                'assets/images/bag.png',
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      const Text(
+                                        'Psychiatrist at LUTH ',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 15,
+                                        fontFamily: 'Urbanist',
+                                        fontWeight: FontWeight.w500,
+                                        height: 0,
+                                        letterSpacing: -0.30,
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                              const SizedBox(height: 11),
+                              Container(
+                                height: 20,
+                                width: 20,
+                                color: Colors.black,
                               )
                             ],
                           ),
                         ),
                       ],
                     ),
+                    
+                    //Dr Kelvin Anthony
                     const SizedBox(width: 14),
                     Column(
                       children: [
@@ -343,18 +396,16 @@ class ExplorePage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 5),
-                        Container(
+                        SizedBox(
                           width: 185,
-                          height: 25,
-                          color: Colors.grey,
+                          height: 85,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
+                              SizedBox(
                                 width: 185,
-                                color: Colors.grey[300],
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment:
@@ -375,32 +426,69 @@ class ExplorePage extends StatelessWidget {
                                     Container(
                                       width: 18,
                                       height: 14,
-                                      decoration: const BoxDecoration(),
-                                      child: const Stack(
-                                        clipBehavior: Clip.antiAlias,
-                                        children: [
-                                          Positioned(
-                                            left: 0,
-                                            top: 0,
-                                            child: SizedBox(
-                                              width: 18,
-                                              height: 14,
-                                              child: Stack(
-                                                children: [
-                                                  Image(
-                                                    image: AssetImage(
-                                                      'assets/images/nigeria.png'
-                                                    ),
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ],
+                                      decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage(
+                                            'assets/images/nigeria.png'
+                                          )
+                                        )
                                       ),
                                     )
                                   ],
                                 ),
+                              ),
+                              const SizedBox(height: 14),
+                              Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        width: 20,
+                                        height: 20,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                            image: AssetImage(
+                                              'assets/images/bag.png'
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      const Text(
+                                        'Psychologist at KATH ',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 15,
+                                        fontFamily: 'Urbanist',
+                                        fontWeight: FontWeight.w500,
+                                        height: 0,
+                                        letterSpacing: -0.30,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 11),
+                              Container(
+                                height: 20,
+                                width: 20,
+                                clipBehavior: Clip.antiAlias,
+                                decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      'assets/images/star.png'
+                                    ),
+                                  ),
+                                ),                         
                               )
                             ],
                           ),
