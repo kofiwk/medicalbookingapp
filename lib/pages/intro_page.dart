@@ -15,7 +15,7 @@ class IntroPage extends StatelessWidget {
           // image
           Image.asset(
             'assets/images/nurse.jpg',
-            height: 490,
+            height: 450,
             width: screenSize.width,
             fit: BoxFit.cover,
           ),
@@ -26,7 +26,7 @@ class IntroPage extends StatelessWidget {
 
           // slider
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
