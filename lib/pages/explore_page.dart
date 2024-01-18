@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ExplorePage extends StatelessWidget {
+class ExplorePage extends StatefulWidget {
   const ExplorePage({super.key});
 
+  @override
+  State<ExplorePage> createState() => _ExplorePageState();
+}
+
+class _ExplorePageState extends State<ExplorePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,56 +49,76 @@ class ExplorePage extends StatelessWidget {
 
               // Medical Practitioners & Group Sessions
               const SizedBox(height: 24),
-              SizedBox(
-                width: 455,
-                height: 38,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Column(
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    width: 455,
+                    height: 27,
+                    child: Row(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
-                          'Medical Practitioners',
-                          textAlign: TextAlign.center,
+                        Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Medical Practitioners',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 20,
+                                fontFamily: 'Urbanist',
+                                fontWeight: FontWeight.w600,
+                                height: 0,
+                                letterSpacing: -0.30,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          'Group Sessions',
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.grey,
                             fontSize: 20,
                             fontFamily: 'Urbanist',
-                            fontWeight: FontWeight.w600,
+                            fontWeight: FontWeight.w500,
                             height: 0,
                             letterSpacing: -0.30,
                           ),
                         ),
-                        const SizedBox(height: 5),
-                        Container(
-                          width: 182,
-                          height: 3,
-                          decoration: ShapeDecoration(
-                            color: Colors.blue,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12)),
-                          ),
-                        ),
                       ],
                     ),
-                    const Text(
-                      'Group Sessions',
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 20,
-                        fontFamily: 'Urbanist',
-                        fontWeight: FontWeight.w500,
-                        height: 0,
-                        letterSpacing: -0.30,
+                  ),
+                  const SizedBox(height: 3),
+                  Row(
+                    children: [
+                      Container(
+                        width: 182,
+                        height: 3,
+                        decoration: ShapeDecoration(
+                          color: Colors.blue,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
                       ),
-                    ),
-                  ],
-                ),
+                      Container(
+                        width: 202,
+                        height: 3,
+                        decoration: ShapeDecoration(
+                          color: Colors.grey,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
 
               // Search Box
