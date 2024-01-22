@@ -1,3 +1,5 @@
+import 'package:doctor/pages/appointment_details_page.dart';
+import 'package:doctor/pages/chats_page.dart';
 import 'package:flutter/material.dart';
 
 class AppointmentsPage extends StatefulWidget {
@@ -36,9 +38,7 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                     height: 24,
                     decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage(
-                          'assets/images/calendar_month.png'
-                        ),
+                        image: AssetImage('assets/images/calendar_month.png'),
                       ),
                     ),
                   )
@@ -117,8 +117,7 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                         decoration: ShapeDecoration(
                           color: Colors.blue,
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12)
-                          ),
+                              borderRadius: BorderRadius.circular(12)),
                         ),
                       ),
                       Container(
@@ -140,7 +139,7 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
               const SizedBox(height: 30),
               Container(
                 padding:
-                  const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                    const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
                 width: 384,
                 height: 52,
                 decoration: ShapeDecoration(
@@ -168,12 +167,9 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                           height: 22,
                           clipBehavior: Clip.antiAlias,
                           decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage(
-                                'assets/images/search.png'
-                              ),
-                            )
-                          ),
+                              image: DecorationImage(
+                            image: AssetImage('assets/images/search.png'),
+                          )),
                         ),
                         const SizedBox(width: 12),
                         const Text(
@@ -196,10 +192,8 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                       height: 24,
                       clipBehavior: Clip.antiAlias,
                       decoration: const BoxDecoration(
-                        image: DecorationImage(image: 
-                          AssetImage(
-                            'assets/images/filter.png'
-                          ),
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/filter.png'),
                         ),
                       ),
                     )
@@ -209,7 +203,7 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
 
               // 1st Appointment
               const SizedBox(height: 40),
-              Container(
+              SizedBox(
                 width: 384,
                 height: 158,
                 child: Row(
@@ -222,9 +216,7 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                       height: 80,
                       decoration: ShapeDecoration(
                         image: const DecorationImage(
-                          image: AssetImage(
-                            'assets/images/tima.png'
-                          ),
+                          image: AssetImage('assets/images/tima.png'),
                         ),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6),
@@ -232,203 +224,182 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                       ),
                     ),
                     const SizedBox(width: 10),
-                    Container(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            child: Column(
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Column(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      const Text.rich(
-                                        TextSpan(
-                                          children: [
-                                            TextSpan(
-                                              text: 'Appointment with',
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontSize: 17,
-                                                fontFamily: 'Urbanist',
-                                                fontWeight: FontWeight.w400,
-                                                height: 0,
-                                                letterSpacing: -0.30,
-                                              )
-                                            ),
-                                            TextSpan(
-                                              text: ' Dr. Cynthia Chisom',
-                                              style: TextStyle(
-                                                color: Colors.blue,
-                                                fontSize: 17,
-                                                fontFamily: 'Urbanist',
-                                                fontWeight: FontWeight.w700,
-                                                height: 0,
-                                                letterSpacing: -0.30,
-                                              )
-                                            )
-                                          ]
-                                        ),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                      const SizedBox(height: 16),
-                                      Container(
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Container(
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment: MainAxisAlignment.start,
-                                                crossAxisAlignment: CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 22,
-                                                    height: 22,
-                                                    decoration: const BoxDecoration(
-                                                      image: DecorationImage(
-                                                        image: AssetImage(
-                                                          'assets/images/calendar.png'
-                                                        )
-                                                      )
-                                                    ),
-                                                  ),
-                                                  const SizedBox(width: 4),
-                                                  const Text(
-                                                    'Wed, 18th May',
-                                                    textAlign: TextAlign.center,
-                                                    style: TextStyle(
-                                                      color: Colors.black,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Urbanist',
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 0,
-                                                      letterSpacing: -0.30,
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            const SizedBox(width:  10),
-                                            Container(
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment: MainAxisAlignment.start,
-                                                crossAxisAlignment: CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 22,
-                                                    height: 22,
-                                                    decoration: const BoxDecoration(
-                                                      image: DecorationImage(
-                                                        image: AssetImage(
-                                                          'assets/images/clock.png'
-                                                        )
-                                                      )
-                                                    ),
-                                                  ),
-                                                  const SizedBox(width: 4),
-                                                  const Text(
-                                                    '4:00 PM - 4:45 PM',
-                                                    textAlign: TextAlign.center,
-                                                    style: TextStyle(
-                                                      color: Colors.black,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Urbanist',
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 0,
-                                                      letterSpacing: -0.30,
-                                                    ),
-                                                  )
-                                                ],
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                                const SizedBox(height: 16),
-                                Container(
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      const Text(
-                                        'Details',
-                                        textAlign: TextAlign.center,
+                                const Text.rich(
+                                  TextSpan(children: [
+                                    TextSpan(
+                                        text: 'Appointment with',
                                         style: TextStyle(
-                                          color: Colors.grey,
-                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontSize: 17,
                                           fontFamily: 'Urbanist',
                                           fontWeight: FontWeight.w400,
                                           height: 0,
                                           letterSpacing: -0.30,
+                                        )),
+                                    TextSpan(
+                                        text: ' Dr. Cynthia Chisom',
+                                        style: TextStyle(
+                                          color: Colors.blue,
+                                          fontSize: 17,
+                                          fontFamily: 'Urbanist',
+                                          fontWeight: FontWeight.w700,
+                                          height: 0,
+                                          letterSpacing: -0.30,
+                                        ))
+                                  ]),
+                                  textAlign: TextAlign.center,
+                                ),
+                                const SizedBox(height: 16),
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          width: 22,
+                                          height: 22,
+                                          decoration: const BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: AssetImage(
+                                                      'assets/images/calendar.png'))),
                                         ),
-                                      ),
-                                      SizedBox(width: 8),
-                                      Container(
-                                        width: 22,
-                                        height: 22,
-                                        decoration: const BoxDecoration(
-                                          image: DecorationImage(
-                                            image: AssetImage(
-                                              'assets/images/info.png',
-                                            ),
-                                          )
+                                        const SizedBox(width: 4),
+                                        const Text(
+                                          'Wed, 18th May',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 16,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.30,
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
+                                      ],
+                                    ),
+                                    const SizedBox(width: 10),
+                                    Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          width: 22,
+                                          height: 22,
+                                          decoration: const BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: AssetImage(
+                                                      'assets/images/clock.png'))),
+                                        ),
+                                        const SizedBox(width: 4),
+                                        const Text(
+                                          '4:00 PM - 4:45 PM',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 16,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.30,
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
                                 )
                               ],
                             ),
-                          ),
-                          const SizedBox(height: 20),
-                          Container(
-                            width: 162,
-                            height: 42,
-                            padding: const EdgeInsets.all(10),
-                            decoration: ShapeDecoration(
-                              color: Colors.blue,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6),
-                              ),
-                            ),
-                            child: Row(
+                            const SizedBox(height: 16),
+                            Row(
                               mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Send a message',
+                                const Text(
+                                  'Details',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'Urbanist',
+                                    color: Colors.grey,
                                     fontSize: 16,
-                                    fontWeight: FontWeight.w600,
+                                    fontFamily: 'Urbanist',
+                                    fontWeight: FontWeight.w400,
                                     height: 0,
                                     letterSpacing: -0.30,
                                   ),
-                                )
+                                ),
+                                const SizedBox(width: 8),
+                                Container(
+                                  width: 22,
+                                  height: 22,
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                    image: AssetImage(
+                                      'assets/images/info.png',
+                                    ),
+                                  )),
+                                ),
                               ],
+                            )
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Container(
+                          width: 162,
+                          height: 42,
+                          padding: const EdgeInsets.all(10),
+                          decoration: ShapeDecoration(
+                            color: Colors.blue,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(6),
                             ),
-                          )
-                        ],
-                      ),
+                          ),
+                          child: const Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                'Send a message',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Urbanist',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  height: 0,
+                                  letterSpacing: -0.30,
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
@@ -436,7 +407,7 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
 
               // 2nd Appointment
               const SizedBox(height: 28),
-              Container(
+              SizedBox(
                 width: 384,
                 height: 158,
                 child: Row(
@@ -449,9 +420,7 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                       height: 80,
                       decoration: ShapeDecoration(
                         image: const DecorationImage(
-                          image: AssetImage(
-                            'assets/images/josephine.png'
-                          ),
+                          image: AssetImage('assets/images/josephine.png'),
                         ),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6),
@@ -459,181 +428,169 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                       ),
                     ),
                     const SizedBox(width: 10),
-                    Container(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            child: Column(
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Column(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      const Text.rich(
-                                        TextSpan(
-                                          children: [
-                                            TextSpan(
-                                              text: 'Appointment with',
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontSize: 17,
-                                                fontFamily: 'Urbanist',
-                                                fontWeight: FontWeight.w400,
-                                                height: 0,
-                                                letterSpacing: -0.30,
-                                              )
-                                            ),
-                                            TextSpan(
-                                              text: ' Dr. Josephine Jane',
-                                              style: TextStyle(
-                                                color: Colors.blue,
-                                                fontSize: 17,
-                                                fontFamily: 'Urbanist',
-                                                fontWeight: FontWeight.w700,
-                                                height: 0,
-                                                letterSpacing: -0.30,
-                                              )
-                                            )
-                                          ]
-                                        ),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                      const SizedBox(height: 16),
-                                      Container(
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Container(
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment: MainAxisAlignment.start,
-                                                crossAxisAlignment: CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 22,
-                                                    height: 22,
-                                                    decoration: const BoxDecoration(
-                                                      image: DecorationImage(
-                                                        image: AssetImage(
-                                                          'assets/images/calendar.png'
-                                                        )
-                                                      )
-                                                    ),
-                                                  ),
-                                                  const SizedBox(width: 4),
-                                                  const Text(
-                                                    'Fri, 12th May',
-                                                    textAlign: TextAlign.center,
-                                                    style: TextStyle(
-                                                      color: Colors.black,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Urbanist',
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 0,
-                                                      letterSpacing: -0.30,
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            const SizedBox(width:  10),
-                                            Container(
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment: MainAxisAlignment.start,
-                                                crossAxisAlignment: CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 22,
-                                                    height: 22,
-                                                    decoration: const BoxDecoration(
-                                                      image: DecorationImage(
-                                                        image: AssetImage(
-                                                          'assets/images/clock.png'
-                                                        )
-                                                      )
-                                                    ),
-                                                  ),
-                                                  const SizedBox(width: 4),
-                                                  const Text(
-                                                    '4:00 PM - 4:45 PM',
-                                                    textAlign: TextAlign.center,
-                                                    style: TextStyle(
-                                                      color: Colors.black,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Urbanist',
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 0,
-                                                      letterSpacing: -0.30,
-                                                    ),
-                                                  )
-                                                ],
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                                const SizedBox(height: 16),
-                                Container(
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      const Text(
-                                        'Details',
-                                        textAlign: TextAlign.center,
+                                const Text.rich(
+                                  TextSpan(children: [
+                                    TextSpan(
+                                        text: 'Appointment with',
                                         style: TextStyle(
-                                          color: Colors.grey,
-                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontSize: 17,
                                           fontFamily: 'Urbanist',
                                           fontWeight: FontWeight.w400,
                                           height: 0,
                                           letterSpacing: -0.30,
+                                        )),
+                                    TextSpan(
+                                        text: ' Dr. Josephine Jane',
+                                        style: TextStyle(
+                                          color: Colors.blue,
+                                          fontSize: 17,
+                                          fontFamily: 'Urbanist',
+                                          fontWeight: FontWeight.w700,
+                                          height: 0,
+                                          letterSpacing: -0.30,
+                                        ))
+                                  ]),
+                                  textAlign: TextAlign.center,
+                                ),
+                                const SizedBox(height: 16),
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          width: 22,
+                                          height: 22,
+                                          decoration: const BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: AssetImage(
+                                                      'assets/images/calendar.png'))),
                                         ),
-                                      ),
-                                      SizedBox(width: 8),
-                                      Container(
-                                        width: 22,
-                                        height: 22,
-                                        decoration: const BoxDecoration(
-                                          image: DecorationImage(
-                                            image: AssetImage(
-                                              'assets/images/info.png',
-                                            ),
-                                          )
+                                        const SizedBox(width: 4),
+                                        const Text(
+                                          'Fri, 12th May',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 16,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.30,
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
+                                      ],
+                                    ),
+                                    const SizedBox(width: 10),
+                                    Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          width: 22,
+                                          height: 22,
+                                          decoration: const BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: AssetImage(
+                                                      'assets/images/clock.png'))),
+                                        ),
+                                        const SizedBox(width: 4),
+                                        const Text(
+                                          '4:00 PM - 4:45 PM',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 16,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.30,
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
                                 )
                               ],
                             ),
-                          ),
-                          const SizedBox(height: 20),
-                          Container(
-                            width: 162,
-                            height: 42,
-                            padding: const EdgeInsets.all(10),
-                            decoration: ShapeDecoration(
-                              color: Colors.blue,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6),
-                              ),
+                            const SizedBox(height: 16),
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                const Text(
+                                  'Details',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 16,
+                                    fontFamily: 'Urbanist',
+                                    fontWeight: FontWeight.w400,
+                                    height: 0,
+                                    letterSpacing: -0.30,
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                Container(
+                                  width: 22,
+                                  height: 22,
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                    image: AssetImage(
+                                      'assets/images/info.png',
+                                    ),
+                                  )),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Container(
+                          width: 162,
+                          height: 42,
+                          padding: const EdgeInsets.all(10),
+                          decoration: ShapeDecoration(
+                            color: Colors.blue,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(6),
                             ),
+                          ),
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ChatsPage()),
+                              );
+                            },
                             child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -653,9 +610,9 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                                 )
                               ],
                             ),
-                          )
-                        ],
-                      ),
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
@@ -663,7 +620,7 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
 
               // 3rd Appointment
               const SizedBox(height: 28),
-              Container(
+              SizedBox(
                 width: 384,
                 height: 158,
                 child: Row(
@@ -676,9 +633,7 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                       height: 80,
                       decoration: ShapeDecoration(
                         image: const DecorationImage(
-                          image: AssetImage(
-                            'assets/images/kelvin.png'
-                          ),
+                          image: AssetImage('assets/images/kelvin.png'),
                         ),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6),
@@ -686,203 +641,190 @@ class _AppointmentsPageState extends State<AppointmentsPage> {
                       ),
                     ),
                     const SizedBox(width: 10),
-                    Container(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            child: Column(
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Column(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      const Text.rich(
-                                        TextSpan(
-                                          children: [
-                                            TextSpan(
-                                              text: 'Appointment with',
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontSize: 17,
-                                                fontFamily: 'Urbanist',
-                                                fontWeight: FontWeight.w400,
-                                                height: 0,
-                                                letterSpacing: -0.30,
-                                              )
-                                            ),
-                                            TextSpan(
-                                              text: ' Dr. Kelvin Anthony',
-                                              style: TextStyle(
-                                                color: Colors.blue,
-                                                fontSize: 17,
-                                                fontFamily: 'Urbanist',
-                                                fontWeight: FontWeight.w700,
-                                                height: 0,
-                                                letterSpacing: -0.30,
-                                              )
-                                            )
-                                          ]
-                                        ),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                      const SizedBox(height: 16),
-                                      Container(
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Container(
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment: MainAxisAlignment.start,
-                                                crossAxisAlignment: CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 22,
-                                                    height: 22,
-                                                    decoration: const BoxDecoration(
-                                                      image: DecorationImage(
-                                                        image: AssetImage(
-                                                          'assets/images/calendar.png'
-                                                        )
-                                                      )
-                                                    ),
-                                                  ),
-                                                  const SizedBox(width: 4),
-                                                  const Text(
-                                                    'Fri, 19th May',
-                                                    textAlign: TextAlign.center,
-                                                    style: TextStyle(
-                                                      color: Colors.black,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Urbanist',
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 0,
-                                                      letterSpacing: -0.30,
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            const SizedBox(width:  10),
-                                            Container(
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment: MainAxisAlignment.start,
-                                                crossAxisAlignment: CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 22,
-                                                    height: 22,
-                                                    decoration: const BoxDecoration(
-                                                      image: DecorationImage(
-                                                        image: AssetImage(
-                                                          'assets/images/clock.png'
-                                                        )
-                                                      )
-                                                    ),
-                                                  ),
-                                                  const SizedBox(width: 4),
-                                                  const Text(
-                                                    '4:00 PM - 4:45 PM',
-                                                    textAlign: TextAlign.center,
-                                                    style: TextStyle(
-                                                      color: Colors.black,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Urbanist',
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 0,
-                                                      letterSpacing: -0.30,
-                                                    ),
-                                                  )
-                                                ],
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                                const SizedBox(height: 16),
-                                Container(
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      const Text(
-                                        'Details',
-                                        textAlign: TextAlign.center,
+                                const Text.rich(
+                                  TextSpan(children: [
+                                    TextSpan(
+                                        text: 'Appointment with',
                                         style: TextStyle(
-                                          color: Colors.grey,
-                                          fontSize: 16,
+                                          color: Colors.black,
+                                          fontSize: 17,
                                           fontFamily: 'Urbanist',
                                           fontWeight: FontWeight.w400,
                                           height: 0,
                                           letterSpacing: -0.30,
+                                        )),
+                                    TextSpan(
+                                        text: ' Dr. Kelvin Anthony',
+                                        style: TextStyle(
+                                          color: Colors.blue,
+                                          fontSize: 17,
+                                          fontFamily: 'Urbanist',
+                                          fontWeight: FontWeight.w700,
+                                          height: 0,
+                                          letterSpacing: -0.30,
+                                        ))
+                                  ]),
+                                  textAlign: TextAlign.center,
+                                ),
+                                const SizedBox(height: 16),
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          width: 22,
+                                          height: 22,
+                                          decoration: const BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: AssetImage(
+                                                      'assets/images/calendar.png'))),
                                         ),
-                                      ),
-                                      SizedBox(width: 8),
-                                      Container(
-                                        width: 22,
-                                        height: 22,
-                                        decoration: const BoxDecoration(
-                                          image: DecorationImage(
-                                            image: AssetImage(
-                                              'assets/images/info.png',
-                                            ),
-                                          )
+                                        const SizedBox(width: 4),
+                                        const Text(
+                                          'Fri, 19th May',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 16,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.30,
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
+                                      ],
+                                    ),
+                                    const SizedBox(width: 10),
+                                    Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          width: 22,
+                                          height: 22,
+                                          decoration: const BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: AssetImage(
+                                                      'assets/images/clock.png'))),
+                                        ),
+                                        const SizedBox(width: 4),
+                                        const Text(
+                                          '4:00 PM - 4:45 PM',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 16,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.30,
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
                                 )
                               ],
                             ),
-                          ),
-                          const SizedBox(height: 20),
-                          Container(
-                            width: 162,
-                            height: 42,
-                            padding: const EdgeInsets.all(10),
-                            decoration: ShapeDecoration(
-                              color: Colors.blue,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6),
-                              ),
-                            ),
-                            child: Row(
+                            const SizedBox(height: 16),
+                            Row(
                               mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Send a message',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'Urbanist',
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    height: 0,
-                                    letterSpacing: -0.30,
+                                GestureDetector(
+                                  onTap: () => Navigator.push(
+                                    context, 
+                                    MaterialPageRoute(
+                                      builder: (context) => const AppointmentDetailsPage(),
+                                    ),
                                   ),
-                                )
+                                  child: const Text(
+                                    'Details',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 16,
+                                      fontFamily: 'Urbanist',
+                                      fontWeight: FontWeight.w400,
+                                      height: 0,
+                                      letterSpacing: -0.30,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                Container(
+                                  width: 22,
+                                  height: 22,
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                    image: AssetImage(
+                                      'assets/images/info.png',
+                                    ),
+                                  )),
+                                ),
                               ],
+                            )
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Container(
+                          width: 162,
+                          height: 42,
+                          padding: const EdgeInsets.all(10),
+                          decoration: ShapeDecoration(
+                            color: Colors.blue,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(6),
                             ),
-                          )
-                        ],
-                      ),
+                          ),
+                          child: const Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                'Send a message',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Urbanist',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  height: 0,
+                                  letterSpacing: -0.30,
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
