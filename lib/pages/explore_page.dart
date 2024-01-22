@@ -26,6 +26,7 @@ class _ExplorePageState extends State<ExplorePage> {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 28,
+                      fontFamily: 'Urbanist',
                       fontWeight: FontWeight.w600,
                       height: 0,
                       letterSpacing: -0.30,
@@ -43,7 +44,7 @@ class _ExplorePageState extends State<ExplorePage> {
                         ),
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
 
@@ -194,93 +195,96 @@ class _ExplorePageState extends State<ExplorePage> {
 
               // Options
               const SizedBox(height: 25),
-              SizedBox(
-                width: 455,
-                height: 27,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const Text(
-                          'All',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 16,
-                            fontFamily: 'Urbanist',
-                            fontWeight: FontWeight.w600,
-                            height: 0,
-                            letterSpacing: -0.30,
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: SizedBox(
+                  width: 455,
+                  height: 27,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          const Text(
+                            'All',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontFamily: 'Urbanist',
+                              fontWeight: FontWeight.w600,
+                              height: 0,
+                              letterSpacing: -0.30,
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 5),
-                        Container(
-                          width: 22,
-                          height: 3,
-                          decoration: ShapeDecoration(
-                            color: Colors.blue,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12)),
+                          const SizedBox(height: 5),
+                          Container(
+                            width: 22,
+                            height: 3,
+                            decoration: ShapeDecoration(
+                              color: Colors.blue,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(12)),
+                            ),
                           ),
+                        ],
+                      ),
+                      const SizedBox(width: 13),
+                      const Text(
+                        'Recommended',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16,
+                          fontFamily: 'Urbanist',
+                          fontWeight: FontWeight.w400,
+                          height: 0,
+                          letterSpacing: -0.30,
                         ),
-                      ],
-                    ),
-                    const SizedBox(width: 13),
-                    const Text(
-                      'Recommended',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 16,
-                        fontFamily: 'Urbanist',
-                        fontWeight: FontWeight.w400,
-                        height: 0,
-                        letterSpacing: -0.30,
                       ),
-                    ),
-                    const SizedBox(width: 13),
-                    const Text(
-                      'Medical Doctors',
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 16,
-                        fontFamily: 'Urbanist',
-                        fontWeight: FontWeight.w400,
-                        height: 0,
-                        letterSpacing: -0.30,
+                      const SizedBox(width: 13),
+                      const Text(
+                        'Medical Doctors',
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16,
+                          fontFamily: 'Urbanist',
+                          fontWeight: FontWeight.w400,
+                          height: 0,
+                          letterSpacing: -0.30,
+                        ),
                       ),
-                    ),
-                    const SizedBox(width: 13),
-                    const Text(
-                      'Nurses',
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 16,
-                        fontFamily: 'Urbanist',
-                        fontWeight: FontWeight.w400,
-                        height: 0,
-                        letterSpacing: -0.30,
+                      const SizedBox(width: 13),
+                      const Text(
+                        'Nurses',
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16,
+                          fontFamily: 'Urbanist',
+                          fontWeight: FontWeight.w400,
+                          height: 0,
+                          letterSpacing: -0.30,
+                        ),
                       ),
-                    ),
-                    const SizedBox(width: 13),
-                    const Text(
-                      'Cardio',
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 16,
-                        fontFamily: 'Urbanist',
-                        fontWeight: FontWeight.w400,
-                        height: 0,
-                        letterSpacing: -0.30,
+                      const SizedBox(width: 13),
+                      const Text(
+                        'Cardiologist',
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16,
+                          fontFamily: 'Urbanist',
+                          fontWeight: FontWeight.w400,
+                          height: 0,
+                          letterSpacing: -0.30,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
 
@@ -330,6 +334,7 @@ class _ExplorePageState extends State<ExplorePage> {
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 17,
+                                        fontFamily: 'Urbanist',
                                         fontWeight: FontWeight.w600,
                                         height: 0,
                                         letterSpacing: -0.30,
@@ -424,6 +429,7 @@ class _ExplorePageState extends State<ExplorePage> {
                                               style: TextStyle(
                                                 color: Colors.black,
                                                 fontSize: 15,
+                                                fontFamily: 'Urbanist',
                                                 fontWeight: FontWeight.w500,
                                                 height: 0,
                                                 letterSpacing: -0.30,
@@ -434,6 +440,7 @@ class _ExplorePageState extends State<ExplorePage> {
                                               style: TextStyle(
                                                 color: Colors.grey,
                                                 fontSize: 15,
+                                                fontFamily: 'Urbanist',
                                                 fontWeight: FontWeight.w600,
                                                 height: 0,
                                                 letterSpacing: -0.30,
@@ -489,6 +496,7 @@ class _ExplorePageState extends State<ExplorePage> {
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         fontSize: 16,
+                                        fontFamily: 'Urbanist',
                                         fontWeight: FontWeight.w600,
                                         height: 0,
                                         letterSpacing: -0.30,
@@ -581,6 +589,7 @@ class _ExplorePageState extends State<ExplorePage> {
                                               style: TextStyle(
                                                 color: Colors.black,
                                                 fontSize: 15,
+                                                fontFamily: 'Urbanist',
                                                 fontWeight: FontWeight.w500,
                                                 height: 0,
                                                 letterSpacing: -0.30,
@@ -591,6 +600,7 @@ class _ExplorePageState extends State<ExplorePage> {
                                               style: TextStyle(
                                                 color: Colors.grey,
                                                 fontSize: 15,
+                                                fontFamily: 'Urbanist',
                                                 fontWeight: FontWeight.w600,
                                                 height: 0,
                                                 letterSpacing: -0.30,
