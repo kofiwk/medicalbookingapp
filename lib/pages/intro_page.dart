@@ -60,9 +60,11 @@ class IntroPage extends StatelessWidget {
                       width: 113,
                       height: 6,
                       decoration: ShapeDecoration(
-                          color: Colors.white,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12))),
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        )
+                      ),
                     )
                   ],
                 )
@@ -76,6 +78,7 @@ class IntroPage extends StatelessWidget {
             style: TextStyle(
               fontWeight: FontWeight.w700,
               fontSize: 36,
+              fontFamily: 'Urbanist',
             ),
             textAlign: TextAlign.center,
           ),
@@ -88,9 +91,11 @@ class IntroPage extends StatelessWidget {
           const Text(
             'Connect with Medical Professionals Anywhere, Anytime.',
             style: TextStyle(
-                fontWeight: FontWeight.w500,
-                fontSize: 20,
-                color: Color(0xFF7E7E7E)),
+              fontWeight: FontWeight.w500,
+              fontSize: 20,
+              fontFamily: 'Urbanist',
+              color: Colors.grey
+            ),
             textAlign: TextAlign.center,
           ),
 
@@ -121,9 +126,11 @@ class IntroPage extends StatelessWidget {
                   Text(
                     'Get Started',
                     style: TextStyle(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 20,
-                        color: Colors.white),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 20,
+                      fontFamily: 'Urbanist',
+                      color: Colors.white
+                    ),
                   )
                 ],
               ),
