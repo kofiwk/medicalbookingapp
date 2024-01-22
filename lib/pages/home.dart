@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
     const ExplorePage(),
     const AppointmentsPage(),
     const ChatsPage(),
-    const SearchPage()
+    const SearchPage(),
   ];
 
 
