@@ -64,6 +64,7 @@ class _DashboardState extends State<Dashboard> {
                                 fontSize: 18,
                                 color: Colors.grey[400],
                                 fontWeight: FontWeight.bold,
+                                fontFamily: 'Urbanist',
                                 height: 0,
                                 letterSpacing: -0.30),
                           ),
@@ -71,6 +72,7 @@ class _DashboardState extends State<Dashboard> {
                             'William Kukah',
                             style: TextStyle(
                               fontSize: 22,
+                              fontFamily: 'Urbanist',
                               fontWeight: FontWeight.w600,
                               height: 0,
                               letterSpacing: -0.30,
@@ -124,6 +126,7 @@ class _DashboardState extends State<Dashboard> {
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
+                            fontFamily: 'Urbanist',
                             fontWeight: FontWeight.w500,
                             height: 0,
                             letterSpacing: -0.30,
@@ -144,6 +147,7 @@ class _DashboardState extends State<Dashboard> {
                           style: TextStyle(
                             color: Colors.blue,
                             fontSize: 20,
+                            fontFamily: 'Urbanist',
                             fontWeight: FontWeight.w700,
                             height: 0,
                             letterSpacing: -0.30,
@@ -176,14 +180,10 @@ class _DashboardState extends State<Dashboard> {
                         Container(
                           width: 20,
                           height: 20,
-                          clipBehavior: Clip.antiAlias,
                           decoration: const BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage('assets/images/arrow_back.png'),
                             ),
-                          ),
-                          child: const Stack(
-                            children: []
                           ),
                         ),
                       ],
@@ -254,6 +254,7 @@ class _DashboardState extends State<Dashboard> {
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 20,
+                                    fontFamily: 'Urbanist',
                                     fontWeight: FontWeight.w600,
                                     height: 0,
                                     letterSpacing: -0.30,
@@ -265,7 +266,7 @@ class _DashboardState extends State<Dashboard> {
                             const SizedBox(height: 16),
                             SizedBox(
                               width: 180,
-                              height: 131,
+                              height: 130,
                               child: Stack(
                                 children: [
                                   Positioned(
@@ -326,6 +327,7 @@ class _DashboardState extends State<Dashboard> {
                                             style: TextStyle(
                                               color: Colors.grey[600],
                                               fontSize: 16,
+                                              fontFamily: 'Urbanist',
                                               fontWeight: FontWeight.w500,
                                               height: 0,
                                               letterSpacing: -0.30,
@@ -369,6 +371,7 @@ class _DashboardState extends State<Dashboard> {
                                             style: TextStyle(
                                               color: Colors.grey[600],
                                               fontSize: 16,
+                                              fontFamily: 'Urbanist',
                                               fontWeight: FontWeight.w500,
                                             ),
                                           )
@@ -409,6 +412,7 @@ class _DashboardState extends State<Dashboard> {
                                             style: TextStyle(
                                               color: Colors.grey[600],
                                               fontSize: 16,
+                                              fontFamily: 'Urbanist',
                                               fontWeight: FontWeight.w500,
                                             ),
                                           )
@@ -454,6 +458,7 @@ class _DashboardState extends State<Dashboard> {
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: 16,
+                                      fontFamily: 'Urbanist',
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600,
                                       height: 0,
@@ -488,7 +493,7 @@ class _DashboardState extends State<Dashboard> {
                                       color: Colors.black,
                                       fontSize: 16,
                                       fontWeight: FontWeight.w500,
-                                      fontFamily: 'Roboto',
+                                      fontFamily: 'Urbanist',
                                       height: 0,
                                       letterSpacing: -0.30,
                                     ),
@@ -527,6 +532,7 @@ class _DashboardState extends State<Dashboard> {
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 16,
+                                      fontFamily: 'Urbanist',
                                       fontWeight: FontWeight.w500,
                                       height: 0,
                                       letterSpacing: -0.30,
@@ -557,6 +563,7 @@ class _DashboardState extends State<Dashboard> {
                                     style: TextStyle(
                                       color: Colors.red,
                                       fontSize: 16,
+                                      fontFamily: 'Urbanist',
                                       fontWeight: FontWeight.w500,
                                       height: 0,
                                       letterSpacing: -0.30,
@@ -587,6 +594,7 @@ class _DashboardState extends State<Dashboard> {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 20,
+                        fontFamily: 'Urbanist',
                         fontWeight: FontWeight.w600,
                         height: 0,
                         letterSpacing: -0.30,
