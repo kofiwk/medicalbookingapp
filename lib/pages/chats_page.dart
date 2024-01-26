@@ -48,130 +48,48 @@ class _ChatsPageState extends State<ChatsPage> {
 
               const SizedBox(height: 20),
               // Circle Avatars
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: SizedBox(
-                  width: 409,
-                  height: 69,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      // Avatar 1
-                      Stack(
-                        children: [
-                          CircleAvatar(
-                            backgroundColor: Colors.black,
-                            radius: 40,
-                            backgroundImage: const AssetImage('assets/images/kelvin.png'),
-                            child: Container(
-                              width: 69,
-                              height: 69,
-                              decoration: const ShapeDecoration(
-                                shape: OvalBorder(
-                                  side: BorderSide(
-                                    width: 2, 
-                                    color: Colors.blue
-                                  ),
-                                ),
+              Container(
+                width: 384,
+                height: 69,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Stack(
+                      children: [
+                        Container(
+                          width: 61,
+                          height: 61,
+                          decoration: ShapeDecoration(
+                            shape: OvalBorder(
+                              side: BorderSide(
+                                width: 2,
+                                color: Colors.blue
+                              )
+                            ),
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/avatar1.png'),
+                              fit: BoxFit.fill
+                              )
+                          ),
+                        ),
+                        Positioned(
+                          right: 4,
+                          child: Container(
+                            width: 14,
+                            height: 14,
+                            decoration: ShapeDecoration(
+                              shape: OvalBorder(),
+                              image: DecorationImage(
+                                image: AssetImage('assets/images/Ellipse13.png')
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(width: 2),
-                      // Avatar 2
-                      Stack(
-                        children: [
-                          CircleAvatar(
-                            radius: 40,
-                            backgroundImage: const AssetImage('assets/images/avatar1.png'),
-                            child: Container(
-                              width: 69,
-                              height: 69,
-                              decoration: const ShapeDecoration(
-                                shape: OvalBorder(
-                                  side: BorderSide(
-                                    width: 2, 
-                                    color: Colors.blue
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(width: 2),
-                      // Avatar 3
-                      Stack(
-                        children: [
-                          CircleAvatar(
-                            radius: 40,
-                            backgroundImage: const AssetImage('assets/images/josephine.png'),
-                            child: Container(
-                              width: 69,
-                              height: 69,
-                              decoration: const ShapeDecoration(
-                                shape: OvalBorder(
-                                  side: BorderSide(
-                                    width: 2, 
-                                    color: Colors.blue
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(width: 2),
-                      // Avatar 4
-                      Stack(
-                        children: [
-                          CircleAvatar(
-                            backgroundColor: Colors.black,
-                            radius: 40,
-                            backgroundImage: const AssetImage('assets/images/tima.png'),
-                            child: Container(
-                              width: 69,
-                              height: 69,
-                              decoration: const ShapeDecoration(
-                                shape: OvalBorder(
-                                  side: BorderSide(
-                                    width: 2, 
-                                    color: Colors.blue
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(width: 2),
-                      // Avatar 5
-                      Stack(
-                        children: [
-                          CircleAvatar(
-                            radius: 40,
-                            backgroundImage: const AssetImage('assets/images/miro.png'),
-                            child: Container(
-                              width: 69,
-                              height: 69,
-                              decoration: const ShapeDecoration(
-                                shape: OvalBorder(
-                                  side: BorderSide(
-                                    width: 2, 
-                                    color: Colors.blue
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                
-                  ),
+                          )
+                        )
+                      ],
+                    )
+                  ],
                 ),
               )
             ],
