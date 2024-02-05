@@ -254,7 +254,7 @@ class _ChatsPageState extends State<ChatsPage> {
               // Chats
               const SizedBox(height: 30),
               //Chats 1
-              Container(
+              SizedBox(
                 width: 384,
                 height: 59,
                 child: Row(
@@ -274,7 +274,7 @@ class _ChatsPageState extends State<ChatsPage> {
                       ),
                     ),
                     const SizedBox(width: 15),
-                    Container(
+                    SizedBox(
                       width: 310,
                       height: 44.53,
                       child: Stack(
@@ -300,7 +300,7 @@ class _ChatsPageState extends State<ChatsPage> {
                           Positioned(
                             left: 0,
                             top: 0.53,
-                            child: Container(
+                            child: SizedBox(
                               width: 262,
                               height: 44,
                               child: Column(
@@ -323,37 +323,35 @@ class _ChatsPageState extends State<ChatsPage> {
                                     ),
                                   ),
                                   const SizedBox(height: 8),
-                                  Container(
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          width: 20.51,
-                                          height: 17,
-                                          decoration: const BoxDecoration(
-                                            image: DecorationImage(
-                                              image: AssetImage('assets/images/read.png')
-                                            )
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 20.51,
+                                        height: 17,
+                                        decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                            image: AssetImage('assets/images/read.png')
+                                          )
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      const SizedBox(
+                                        width: 233,
+                                        child: Text(
+                                          'Have you been able to go through the ...',
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.28,
                                           ),
                                         ),
-                                        const SizedBox(width: 8),
-                                        const SizedBox(
-                                          width: 233,
-                                          child: Text(
-                                            'Have you been able to go through the ...',
-                                            style: TextStyle(
-                                              fontSize: 14,
-                                              fontFamily: 'Urbanist',
-                                              fontWeight: FontWeight.w500,
-                                              height: 0,
-                                              letterSpacing: -0.28,
-                                            ),
-                                          ),
-                                        )
-                                      ],
-                                    ),
+                                      )
+                                    ],
                                   )
                                 ],
                               ),
@@ -368,7 +366,7 @@ class _ChatsPageState extends State<ChatsPage> {
               
               const SizedBox(height: 24),
               // Chat 2
-              Container(
+              SizedBox(
                 width: 384,
                 height: 59,
                 child: Row(
@@ -388,12 +386,12 @@ class _ChatsPageState extends State<ChatsPage> {
                       ),
                     ),
                     const SizedBox(width: 15),
-                    Container(
+                    const SizedBox(
                       width: 310,
                       height: 44.53,
                       child: Stack(
                         children: [
-                          const Positioned(
+                          Positioned(
                             left: 232.80,
                             top: 0,
                             child: SizedBox(
@@ -414,7 +412,7 @@ class _ChatsPageState extends State<ChatsPage> {
                           Positioned(
                             left: 0,
                             top: 0.53,
-                            child: Container(
+                            child: SizedBox(
                               width: 262,
                               height: 44,
                               child: Column(
@@ -422,7 +420,7 @@ class _ChatsPageState extends State<ChatsPage> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const SizedBox(
+                                  SizedBox(
                                     width: 124,
                                     child: Text(
                                       'Nurse Bella Frank',
@@ -436,29 +434,27 @@ class _ChatsPageState extends State<ChatsPage> {
                                       ),
                                     ),
                                   ),
-                                  const SizedBox(height: 8),
-                                  Container(
-                                    child: const Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        SizedBox(
-                                          width: 262,
-                                          child: Text(
-                                            'We will be having our appointment resched...',
-                                            style: TextStyle(
-                                              color: Colors.grey,
-                                              fontSize: 14,
-                                              fontFamily: 'Urbanist',
-                                              fontWeight: FontWeight.w500,
-                                              height: 0,
-                                              letterSpacing: -0.28,
-                                            ),
+                                  SizedBox(height: 8),
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      SizedBox(
+                                        width: 262,
+                                        child: Text(
+                                          'We will be having our appointment resched...',
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 14,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.28,
                                           ),
                                         ),
-                                      ],
-                                    ),
+                                      ),
+                                    ],
                                   )
                                 ],
                               ),
@@ -473,7 +469,7 @@ class _ChatsPageState extends State<ChatsPage> {
               
               const SizedBox(height: 24),
               // Chat 3
-              Container(
+              SizedBox(
                 width: 384,
                 height: 59,
                 child: Row(
@@ -493,12 +489,12 @@ class _ChatsPageState extends State<ChatsPage> {
                       ),
                     ),
                     const SizedBox(width: 15),
-                    Container(
+                    const SizedBox(
                       width: 310,
                       height: 44.53,
                       child: Stack(
                         children: [
-                          const Positioned(
+                          Positioned(
                             left: 232.80,
                             top: 0,
                             child: SizedBox(
@@ -519,7 +515,7 @@ class _ChatsPageState extends State<ChatsPage> {
                           Positioned(
                             left: 0,
                             top: 0.53,
-                            child: Container(
+                            child: SizedBox(
                               width: 262,
                               height: 44,
                               child: Column(
@@ -527,7 +523,7 @@ class _ChatsPageState extends State<ChatsPage> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const SizedBox(
+                                  SizedBox(
                                     width: 124,
                                     child: Text(
                                       'Dr. Peter Stephen',
@@ -541,29 +537,27 @@ class _ChatsPageState extends State<ChatsPage> {
                                       ),
                                     ),
                                   ),
-                                  const SizedBox(height: 8),
-                                  Container(
-                                    child: const Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        SizedBox(
-                                          width: 249,
-                                          child: Text(
-                                            'We really had a wonderful session today',
-                                            style: TextStyle(
-                                              color: Colors.grey,
-                                              fontSize: 14,
-                                              fontFamily: 'Urbanist',
-                                              fontWeight: FontWeight.w500,
-                                              height: 0,
-                                              letterSpacing: -0.28,
-                                            ),
+                                  SizedBox(height: 8),
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      SizedBox(
+                                        width: 249,
+                                        child: Text(
+                                          'We really had a wonderful session today',
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 14,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.28,
                                           ),
-                                        )
-                                      ],
-                                    ),
+                                        ),
+                                      )
+                                    ],
                                   )
                                 ],
                               ),
@@ -578,7 +572,7 @@ class _ChatsPageState extends State<ChatsPage> {
               
               const SizedBox(height: 24),
               // Chat 4
-              Container(
+              SizedBox(
                 width: 384,
                 height: 59,
                 child: Row(
@@ -598,7 +592,7 @@ class _ChatsPageState extends State<ChatsPage> {
                       ),
                     ),
                     const SizedBox(width: 15),
-                    Container(
+                    SizedBox(
                       width: 310,
                       height: 44.53,
                       child: Stack(
@@ -624,7 +618,7 @@ class _ChatsPageState extends State<ChatsPage> {
                           Positioned(
                             left: 0,
                             top: 0.53,
-                            child: Container(
+                            child: SizedBox(
                               width: 262,
                               height: 44,
                               child: Column(
@@ -647,37 +641,35 @@ class _ChatsPageState extends State<ChatsPage> {
                                     ),
                                   ),
                                   const SizedBox(height: 8),
-                                  Container(
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          width: 20.51,
-                                          height: 17,
-                                          decoration: const BoxDecoration(
-                                            image: DecorationImage(
-                                              image: AssetImage('assets/images/read.png')
-                                            )
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 20.51,
+                                        height: 17,
+                                        decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                            image: AssetImage('assets/images/read.png')
+                                          )
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      const SizedBox(
+                                        width: 233,
+                                        child: Text(
+                                          'Have you been able to go through the ...',
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.28,
                                           ),
                                         ),
-                                        const SizedBox(width: 8),
-                                        const SizedBox(
-                                          width: 233,
-                                          child: Text(
-                                            'Have you been able to go through the ...',
-                                            style: TextStyle(
-                                              fontSize: 14,
-                                              fontFamily: 'Urbanist',
-                                              fontWeight: FontWeight.w500,
-                                              height: 0,
-                                              letterSpacing: -0.28,
-                                            ),
-                                          ),
-                                        )
-                                      ],
-                                    ),
+                                      )
+                                    ],
                                   )
                                 ],
                               ),
@@ -692,7 +684,7 @@ class _ChatsPageState extends State<ChatsPage> {
               
               const SizedBox(height: 24),
               // Chat 5
-              Container(
+              SizedBox(
                 width: 384,
                 height: 59,
                 child: Row(
@@ -712,7 +704,7 @@ class _ChatsPageState extends State<ChatsPage> {
                       ),
                     ),
                     const SizedBox(width: 15),
-                    Container(
+                    SizedBox(
                       width: 310,
                       height: 44.53,
                       child: Stack(
@@ -738,7 +730,7 @@ class _ChatsPageState extends State<ChatsPage> {
                           Positioned(
                             left: 0,
                             top: 0.53,
-                            child: Container(
+                            child: SizedBox(
                               width: 262,
                               height: 44,
                               child: Column(
@@ -761,37 +753,35 @@ class _ChatsPageState extends State<ChatsPage> {
                                     ),
                                   ),
                                   const SizedBox(height: 8),
-                                  Container(
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          width: 20.51,
-                                          height: 17,
-                                          decoration: const BoxDecoration(
-                                            image: DecorationImage(
-                                              image: AssetImage('assets/images/read.png')
-                                            )
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 20.51,
+                                        height: 17,
+                                        decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                            image: AssetImage('assets/images/read.png')
+                                          )
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      const SizedBox(
+                                        width: 233,
+                                        child: Text(
+                                          'Have you been able to go through the ...',
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.28,
                                           ),
                                         ),
-                                        const SizedBox(width: 8),
-                                        const SizedBox(
-                                          width: 233,
-                                          child: Text(
-                                            'Have you been able to go through the ...',
-                                            style: TextStyle(
-                                              fontSize: 14,
-                                              fontFamily: 'Urbanist',
-                                              fontWeight: FontWeight.w500,
-                                              height: 0,
-                                              letterSpacing: -0.28,
-                                            ),
-                                          ),
-                                        )
-                                      ],
-                                    ),
+                                      )
+                                    ],
                                   )
                                 ],
                               ),
@@ -806,7 +796,7 @@ class _ChatsPageState extends State<ChatsPage> {
               
               const SizedBox(height: 24),
               // Chat 6
-              Container(
+              SizedBox(
                 width: 384,
                 height: 59,
                 child: Row(
@@ -826,7 +816,7 @@ class _ChatsPageState extends State<ChatsPage> {
                       ),
                     ),
                     const SizedBox(width: 15),
-                    Container(
+                    SizedBox(
                       width: 310,
                       height: 44.53,
                       child: Stack(
@@ -852,7 +842,7 @@ class _ChatsPageState extends State<ChatsPage> {
                           Positioned(
                             left: 0,
                             top: 0.53,
-                            child: Container(
+                            child: SizedBox(
                               width: 262,
                               height: 44,
                               child: Column(
@@ -875,37 +865,35 @@ class _ChatsPageState extends State<ChatsPage> {
                                     ),
                                   ),
                                   const SizedBox(height: 8),
-                                  Container(
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          width: 20.51,
-                                          height: 17,
-                                          decoration: const BoxDecoration(
-                                            image: DecorationImage(
-                                              image: AssetImage('assets/images/read.png')
-                                            )
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 20.51,
+                                        height: 17,
+                                        decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                            image: AssetImage('assets/images/read.png')
+                                          )
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      const SizedBox(
+                                        width: 233,
+                                        child: Text(
+                                          'Have you been able to go through the ...',
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.28,
                                           ),
                                         ),
-                                        const SizedBox(width: 8),
-                                        const SizedBox(
-                                          width: 233,
-                                          child: Text(
-                                            'Have you been able to go through the ...',
-                                            style: TextStyle(
-                                              fontSize: 14,
-                                              fontFamily: 'Urbanist',
-                                              fontWeight: FontWeight.w500,
-                                              height: 0,
-                                              letterSpacing: -0.28,
-                                            ),
-                                          ),
-                                        )
-                                      ],
-                                    ),
+                                      )
+                                    ],
                                   )
                                 ],
                               ),
@@ -920,7 +908,7 @@ class _ChatsPageState extends State<ChatsPage> {
               
               const SizedBox(height: 24),
               // Chat 7
-              Container(
+              SizedBox(
                 width: 384,
                 height: 59,
                 child: Row(
@@ -940,7 +928,7 @@ class _ChatsPageState extends State<ChatsPage> {
                       ),
                     ),
                     const SizedBox(width: 15),
-                    Container(
+                    SizedBox(
                       width: 310,
                       height: 44.53,
                       child: Stack(
@@ -966,7 +954,7 @@ class _ChatsPageState extends State<ChatsPage> {
                           Positioned(
                             left: 0,
                             top: 0.53,
-                            child: Container(
+                            child: SizedBox(
                               width: 262,
                               height: 44,
                               child: Column(
@@ -989,37 +977,35 @@ class _ChatsPageState extends State<ChatsPage> {
                                     ),
                                   ),
                                   const SizedBox(height: 8),
-                                  Container(
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          width: 20.51,
-                                          height: 17,
-                                          decoration: const BoxDecoration(
-                                            image: DecorationImage(
-                                              image: AssetImage('assets/images/read.png')
-                                            )
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 20.51,
+                                        height: 17,
+                                        decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                            image: AssetImage('assets/images/read.png')
+                                          )
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      const SizedBox(
+                                        width: 233,
+                                        child: Text(
+                                          'Have you been able to go through the ...',
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontFamily: 'Urbanist',
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.28,
                                           ),
                                         ),
-                                        const SizedBox(width: 8),
-                                        const SizedBox(
-                                          width: 233,
-                                          child: Text(
-                                            'Have you been able to go through the ...',
-                                            style: TextStyle(
-                                              fontSize: 14,
-                                              fontFamily: 'Urbanist',
-                                              fontWeight: FontWeight.w500,
-                                              height: 0,
-                                              letterSpacing: -0.28,
-                                            ),
-                                          ),
-                                        )
-                                      ],
-                                    ),
+                                      )
+                                    ],
                                   )
                                 ],
                               ),
