@@ -132,6 +132,7 @@ class _DashboardState extends State<Dashboard> {
                             letterSpacing: -0.30,
                           ),
                         ),
+                        
                         TextSpan(
                           text: ' ',
                           style: TextStyle(
