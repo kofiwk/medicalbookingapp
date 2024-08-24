@@ -1,5 +1,5 @@
-import 'package:doctor/pages/appointment_details_page.dart';
-import 'package:doctor/pages/chats_page.dart';
+import 'package:doctor/features/appointments/appointment_details_page.dart';
+import 'package:doctor/features/chat/chats_page.dart';
 import 'package:flutter/material.dart';
 
 class AppointmentsPage extends StatefulWidget {

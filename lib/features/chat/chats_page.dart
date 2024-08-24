@@ -104,7 +104,7 @@ class _ChatsPageState extends State<ChatsPage> {
                               )
                             ),
                             image: DecorationImage(
-                              image: AssetImage('assets/images/avatar1.png'),
+                              image: AssetImage('assets/images/bella.png'),
                               fit: BoxFit.fill
                               )
                           ),
@@ -139,7 +139,7 @@ class _ChatsPageState extends State<ChatsPage> {
                               )
                             ),
                             image: DecorationImage(
-                              image: AssetImage('assets/images/avatar1.png'),
+                              image: AssetImage('assets/images/chuks.png'),
                               fit: BoxFit.fill
                               )
                           ),
@@ -174,7 +174,7 @@ class _ChatsPageState extends State<ChatsPage> {
                               )
                             ),
                             image: DecorationImage(
-                              image: AssetImage('assets/images/avatar1.png'),
+                              image: AssetImage('assets/images/miro.png'),
                               fit: BoxFit.fill
                               )
                           ),
@@ -209,7 +209,7 @@ class _ChatsPageState extends State<ChatsPage> {
                               )
                             ),
                             image: DecorationImage(
-                              image: AssetImage('assets/images/avatar1.png'),
+                              image: AssetImage('assets/images/josephine.png'),
                               fit: BoxFit.fill
                               )
                           ),

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:doctor/utils/library/imports.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});

@@ -1,5 +1,4 @@
-import 'package:doctor/pages/home.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor/utils/library/imports.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -88,13 +87,13 @@ class IntroPage extends StatelessWidget {
           ),
 
           // subtitle
-          const Text(
+          Text(
             'Connect with Medical Professionals Anywhere, Anytime.',
             style: TextStyle(
               fontWeight: FontWeight.w500,
               fontSize: 20,
               fontFamily: 'Urbanist',
-              color: Colors.grey
+              color: Colors.grey[700]
             ),
             textAlign: TextAlign.center,
           ),
@@ -106,7 +105,7 @@ class IntroPage extends StatelessWidget {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) =>  const HomePage(),
+                builder: (context) =>  const AuthPage(),
               ),
             ),
             child: Container(

@@ -1,8 +1,8 @@
-import 'package:doctor/pages/appointments_page.dart';
-import 'package:doctor/pages/chats_page.dart';
-import 'package:doctor/pages/dashboard.dart';
-import 'package:doctor/pages/explore_page.dart';
-import 'package:doctor/pages/search_page.dart';
+import 'package:doctor/features/appointments/appointments_page.dart';
+import 'package:doctor/features/chat/chats_page.dart';
+import 'package:doctor/features/home/dashboard.dart';
+import 'package:doctor/features/explore/explore_page.dart';
+import 'package:doctor/features/search/search_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {

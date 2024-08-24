@@ -1,5 +1,4 @@
-import 'package:doctor/pages/appointments_page.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor/utils/library/imports.dart';
 
 class AppointmentDetailsPage extends StatefulWidget {
   const AppointmentDetailsPage({super.key});
