@@ -1,3 +1,4 @@
+import 'package:doctor/navbar.dart';
 import 'package:doctor/utils/library/imports.dart';
 
 class IntroPage extends StatelessWidget {
@@ -105,7 +106,7 @@ class IntroPage extends StatelessWidget {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) =>  const AuthPage(),
+                builder: (context) =>  const HomePage(),
               ),
             ),
             child: Container(

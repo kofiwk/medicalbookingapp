@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
             icon: Icon(
               Icons.home_filled
             ), 
-            label: ''
+            label: 'Home'
           ),
           BottomNavigationBarItem(
             icon: Icon(
